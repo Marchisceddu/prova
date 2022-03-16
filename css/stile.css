@@ -29,6 +29,7 @@ body, html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    -webkit-backface-visibility: hidden;
     height: 100%;
     filter: blur(2px) brightness(60%);
     -webkit-filter: blur(2px) brightness(60%);
@@ -47,6 +48,7 @@ body, html {
 
     #fisso{
         position: fixed; 
+        -webkit-backface-visibility: hidden;
         height: 100%;
         width: 100%;
         transition: 0.5s;
