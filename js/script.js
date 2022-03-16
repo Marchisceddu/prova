@@ -35,7 +35,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     let block = document.getElementById('fisso');
 
-    if (document.documentElement.scrollTop == 0) {
+    if (document.documentElement.scrollTop < 300) {
         block.style.filter = "blur(0px) brightness(100%)";
         block.style.webkitFilter = "blur(0px) brightness(100%)";
     }
