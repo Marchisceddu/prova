@@ -285,8 +285,7 @@ body::after{
         }
 
     #home_testo{
-        position: absolute;
-        top: 35%;
+        top: 35vmax;
         left: 50%;
         transform: translate(-50%, -50%);
             -o-transform: translate(-50%, -50%);
@@ -305,7 +304,7 @@ body::after{
         }
 
     #blocco-menu{
-        top: 45%;
+        top: 45vmax;
         left: 50%;
         font-size: 60%;
         color: rgba(255, 255, 255, 0.8);
@@ -325,7 +324,7 @@ body::after{
         }
 
     #blocco-contatti{
-        top: 60%;
+        top: 60vmax;
         left: 50%;
         font-size: 60%;
         color: rgba(255, 255, 255, 0.8);
