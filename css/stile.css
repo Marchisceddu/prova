@@ -285,7 +285,7 @@ body::after{
         }
 
     #home_testo{
-        top: 35vmax;
+        top: 30vmax;
         left: 50%;
         transform: translate(-50%, -50%);
             -o-transform: translate(-50%, -50%);
