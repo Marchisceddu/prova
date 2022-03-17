@@ -72,8 +72,8 @@ body::after{
 
     #blocco_logo{
         position: absolute;
-        top: 5%;
-        left: 5%;
+        top: 50px;
+        left: 50px;
     }
         #logo{
             display: inline-block;
