@@ -205,7 +205,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(26, 30, 35, 0.8);
+  background: rgba(26, 30, 35, 0.2);
   opacity: 0;
   overflow-x: hidden;
   visibility: hidden;
