@@ -122,6 +122,7 @@
   background: rgba(225, 220, 215, 0.8);
   border-radius: 10px;
   overflow: hidden;
+  visibility: hidden;
   transition: 0.5s;
   -o-transition: 0.5s;
   -moz-transition: 0.5s;
