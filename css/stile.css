@@ -136,10 +136,7 @@ body::after{
                 -o-transition: 0.5s;
                 -moz-transition: 0.5s;
                 -webkit-transition: 0.5s;
-            transform: translateY(30px);
-                -o-transform: translateY(30px);
-                -ms-transform: translateY(30px);
-                -webkit-transform: translateY(30px);
+
         }
         #blocco-menu:hover #blocco-menu-titolo{
             color: rgba(255, 255, 255, 1);
@@ -149,10 +146,7 @@ body::after{
                 -webkit-transform: translateY(0px);   
         }
         #visualizza-menu{
-            transform: translateY(-10px);
-                -o-transform: translateY(-10px);
-                -ms-transform: translateY(-10px);
-                -webkit-transform: translateY(-10px);
+
             opacity: 0;
             transition: 0.5s;
                 -o-transition: 0.5s;
