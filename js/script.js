@@ -58,14 +58,14 @@ $(document).ready(function(){
       autoplaySpeed: 3000,
       speed: 800,
       edgeFriction: 0,
-      touchThreshold: 2,
+      touchThreshold: 0,
       slidesToShow: 4,
       slidesToScroll: 1,
 
       //Responsive per far vedere solo 2 img per volta
       responsive: [
         {
-          breakpoint: 800,
+          breakpoint: 850,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
