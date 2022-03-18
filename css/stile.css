@@ -117,8 +117,8 @@ body::after{
 
     #blocco-menu{
         position: fixed;
-        bottom: 20vmin;
-        left: 25%;
+        bottom: 10vmax;
+        left: 25vmax;
         transform: translate(-50%, 0);
             -o-transform: translate(-50%, 0);
             -ms-transform: translate(-50%, 0);
