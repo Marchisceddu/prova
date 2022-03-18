@@ -117,7 +117,7 @@ body::after{
 
     #blocco-menu{
         position: fixed;
-        bottom: 10vmax;
+        bottom: 20vmin;
         left: 25%;
         transform: translate(-50%, 0);
             -o-transform: translate(-50%, 0);
@@ -174,7 +174,7 @@ body::after{
 
     #blocco-contatti{
         position: fixed;
-        bottom: 10vmax;
+        bottom: 20vmin;
         left: 75%;
         transform: translate(-50%, 0);
             -o-transform: translate(-50%, 0);
