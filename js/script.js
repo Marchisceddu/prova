@@ -58,7 +58,7 @@ $(document).ready(function(){
       autoplaySpeed: 3000,
       speed: 800,
       edgeFriction: 0,
-      touchThreshold: 0,
+      touchThreshold: 5,
       slidesToShow: 4,
       slidesToScroll: 1,
 
