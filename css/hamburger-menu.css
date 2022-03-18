@@ -21,10 +21,10 @@
   -o-transform: translateY(0);
   -ms-transform: translateY(0);
   -webkit-transform: translateY(0);
-        transition: 1.2s 0.1s;
-          -o-transition: 1.2s 0.1s;
-          -moz-transition: 1.2s 0.1s;
-          -webkit-transition: 1.2s 0.1s;
+        transition: 1.2s;
+          -o-transition: 1.2s;
+          -moz-transition: 1.2s;
+          -webkit-transition: 1.2s;
 }
 
 /* line 41, ../New Sito ReyOasi/scss/hamburger-menu.scss */
