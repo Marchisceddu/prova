@@ -332,7 +332,7 @@
 .menu .images {
   margin-top: 36px;
   display: flex;
-  flex-wrap: wrap;
+
 }
 
 @media screen and (max-width: 850px) {
