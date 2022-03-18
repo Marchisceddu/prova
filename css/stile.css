@@ -117,12 +117,12 @@ body::after{
 
     #blocco-menu{
         position: fixed;
-        bottom: 0;
+        top: 0;
         left: 25vmax;
-        transform: translate(-50%, 0);
-            -o-transform: translate(-50%, 0);
-            -ms-transform: translate(-50%, 0);
-            -webkit-transform: translate(-50%, -90%);
+        transform: translate(-50%, 250%);
+            -o-transform: translate(-50%, 250%);
+            -ms-transform: translate(-50%, 250%);
+            -webkit-transform: translate(-50%, 250%);
         margin: 0px;
         text-align: center;
     }
