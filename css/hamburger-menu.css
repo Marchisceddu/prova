@@ -401,10 +401,8 @@
 /* line 354, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .images img {
   height: 250px;
-  transform: translateY(102%);
-  -o-transform: translateY(102%);
-  -ms-transform: translateY(102%);
-  -webkit-transform: translateY(102%);
+ 
+
 }
 
 /*# sourceMappingURL=hamburger-menu.css.map */
