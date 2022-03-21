@@ -1,0 +1,374 @@
+/* GLOBALE */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rozha+One&display=swap');
+
+*, *::after, *::before {
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #353535;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    height: 100%;
+    font-family: 'Rozha One', serif;
+}
+
+body::after{
+    content:"";
+    position:fixed; /* stretch a fixed position to the whole screen */
+    top:0;
+    height:100vh; /* fix for mobile browser address bar appearing disappearing */
+    left:0;
+    right:0;
+    background: url(https://images4.alphacoders.com/677/thumb-1920-677941.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: blur(2px) brightness(60%);
+    -webkit-filter: blur(2px) brightness(60%);
+}
+
+::selection {
+    background-color: rgba(115, 211, 255, 0.3);
+}
+::-moz-selection {
+    background-color: rgba(115, 211, 255, 0.3);
+}
+
+::-webkit-scrollbar {
+    width: 0; 
+    background: transparent; 
+}
+
+/* HOME */
+#sfondo{
+    height: 100%;
+    filter: blur(2px) brightness(60%);
+        -webkit-filter: blur(2px) brightness(60%);
+}
+
+#home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 1; 
+    transition: 0.5s;
+        -o-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+}
+
+    #fisso{
+        position: fixed;
+        width: 100%;
+        height: 100vmin;
+        transition: 0.5s;
+            -o-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -webkit-transition: 0.5s;
+        filter: blur(0px) brightness(100%);
+            -webkit-filter: blur(0px) brightness(100%);
+    }
+
+    #blocco_logo{
+        position: fixed;
+        top: 3vmax; 
+        left: 4vmax;
+    }
+        #logo{
+            display: inline-block;
+            float: left;
+        }
+        #logo img{
+            width: 50px;
+        }
+        #scritta_logo{
+            display: inline-block;
+            padding-top: 15px;
+            margin-left: 10px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+    #home_testo{
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 100%);
+            -o-transform: translate(-50%, 100%);
+            -ms-transform: translate(-50%, 100%);
+            -webkit-transform: translate(-50%, 100%);
+        margin: 0px;
+        text-align: center;
+    }
+        #home_testo_titolo{
+            font-size: 480%;
+            display: block;
+            margin: 0px;
+        }
+        #home_testo_sottotitolo{
+            font-size: 130%;
+            color: rgb(235, 235, 235);
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+        }
+
+    #blocco-menu{
+        position: absolute;
+        top: -20%;
+        left: 25%;
+        transform: translate(-50%, 250%);
+            -o-transform: translate(-50%, 250%);
+            -ms-transform: translate(-50%, 250%);
+            -webkit-transform: translate(-50%, 250%);
+        margin: 0px;
+        text-align: center;
+    }
+        #blocco-menu-titolo{
+            font-size: 400%;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 1);
+            display: block;
+            margin: 0px;
+            transition: 0.5s;
+                -o-transition: 0.5s;
+                -moz-transition: 0.5s;
+                -webkit-transition: 0.5s;
+            transform: translateY(30px);
+                -o-transform: translateY(30px);
+                -ms-transform: translateY(30px);
+                -webkit-transform: translateY(30px);
+        }
+        #blocco-menu:hover #blocco-menu-titolo{
+            color: rgba(255, 255, 255, 1);
+            transform: translateY(0px);     
+                -o-transform: translateY(0px);
+                -ms-transform: translateY(0px);
+                -webkit-transform: translateY(0px);   
+        }
+        #visualizza-menu{
+            transform: translateY(-10px);
+                -o-transform: translateY(-10px);
+                -ms-transform: translateY(-10px);
+                -webkit-transform: translateY(-10px);
+            opacity: 0;
+            transition: 0.5s;
+                -o-transition: 0.5s;
+                -moz-transition: 0.5s;
+                -webkit-transition: 0.5s;
+        }
+        #visualizza-menu p{
+            font-family: 'Dancing Script', cursive;
+            font-size: 130%;
+            margin-top: 0;
+        }
+        #blocco-menu:hover #visualizza-menu{
+            transform: translateY(0px); 
+                -o-transform: translateY(0px);
+                -ms-transform: translateY(0px);
+                -webkit-transform: translateY(0px);
+            opacity: 1;       
+        }
+
+    #blocco-contatti{
+        position: absolute;
+        top: -20%; /*-10vmax*/
+        left: 75%;
+        transform: translate(-50%, 250%);
+            -o-transform: translate(-50%, 250%);
+            -ms-transform: translate(-50%, 250%);
+            -webkit-transform: translate(-50%, 250%);
+        margin: 0px;
+        text-align: center;
+    }
+        #blocco-contatti-titolo{
+            font-size: 400%;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 1);
+            display: block;
+            margin: 0px;
+            transition: 0.5s;
+                -o-transition: 0.5s;
+                -moz-transition: 0.5s;
+                -webkit-transition: 0.5s;
+            transform: translateY(30px);
+                -o-transform: translateY(30px);
+                -ms-transform: translateY(30px);
+                -webkit-transform: translateY(30px);
+        }
+        #blocco-contatti:hover #blocco-contatti-titolo{
+            color: rgba(255, 255, 255, 1);
+            transform: translateY(0px);   
+                -o-transform: translateY(0px);
+                -ms-transform: translateY(0px);
+                -webkit-transform: translateY(0px);     
+        }
+        #visualizza-contatti{
+            transform: translateY(-10px);
+                -o-transform: translateY(-10px);
+                -ms-transform: translateY(-10px);
+                -webkit-transform: translateY(-10px);
+            opacity: 0;
+            transition: 0.5s;
+                -o-transition: 0.5s;
+                -moz-transition: 0.5s;
+                -webkit-transition: 0.5s;
+        }
+        #visualizza-contatti p{
+            font-family: 'Dancing Script', cursive;
+            font-size: 130%;
+            margin-top: 0;
+        }
+        #blocco-contatti:hover #visualizza-contatti{
+            transform: translateY(0px); 
+                -o-transform: translateY(0px);
+                -ms-transform: translateY(0px);
+                -webkit-transform: translateY(0px);
+            opacity: 1;       
+        }
+
+    #info{
+        text-align: center;
+        position: absolute;
+        bottom: 1%;
+        left: 50%;
+        transform: translate(-50%, 0);
+            -o-transform: translate(-50%, 0);
+            -ms-transform: translate(-50%, 0);
+            -webkit-transform: translate(-50%, 0);
+        margin: 0px;
+        font-size: 15px; 
+        letter-spacing: 1.5px;
+        line-height: 1px;
+        cursor: pointer;
+        color: rgb(235, 235, 235);
+        transition: 1s;
+            -o-transition: 1s;
+            -moz-transition: 1s;
+            -webkit-transition: 1s;
+    }
+        #info p{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        .arrow-down{
+            margin-top: 30%;
+            width: 10px; 
+            filter: invert(97%) sepia(0%) saturate(6321%) hue-rotate(193deg) brightness(122%) contrast(84%);
+        }
+        #info:hover{
+            color: rgb(255, 255, 255);
+        }
+        #info:hover .arrow-down{
+            filter: invert(99%) sepia(3%) saturate(104%) hue-rotate(18deg) brightness(116%) contrast(100%);;
+        }
+
+/* Responsive */
+@media screen and (max-height: 600px){
+    /* Home */
+    #blocco-menu{
+        transform: translate(-50%, 230%);
+            -o-transform: translate(-50%, 230%);
+            -ms-transform: translate(-50%, 230%);
+            -webkit-transform: translate(-50%, 230%);
+    }
+
+    #blocco-contatti{
+        transform: translate(-50%, 230%);
+        -o-transform: translate(-50%, 230%);
+        -ms-transform: translate(-50%, 230%);
+        -webkit-transform: translate(-50%, 230%);
+    }
+} 
+
+@media screen and (max-width: 800px), screen and (orientation: portrait){
+    /* Home */
+    #blocco_logo{
+        top: 4vmax; 
+        left: 5vmax;
+    }
+        #scritta_logo{
+            opacity: 1;
+            padding-top: 15px;
+            font-size: 22px;
+            margin-left: 5px;
+        }
+
+    #home_testo{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, 0);
+            -o-transform: translate(-50%, 0);
+            -ms-transform: translate(-50%, 0);
+            -webkit-transform: translate(-50%, 0);
+    }
+        #home_testo_titolo{
+            font-size: 10vw;
+            margin: 10px;
+        }
+        #home_testo_sottotitolo{
+            text-align: center;
+            font-size: 4vw;
+            margin: 10px;
+            white-space: nowrap;
+        }
+
+    #blocco-menu{
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 2vw;
+        transform: translate(0, 0);
+            -o-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+            -webkit-transform: translate(-50%, 0);
+    }
+        #blocco-menu #blocco-menu-titolo{
+            transform: translateY(0px);   
+                -o-transform: translateY(0px);
+                -ms-transform: translateY(0px);
+                -webkit-transform: translateY(0px);     
+        }
+        #blocco-menu #visualizza-menu{
+            transform: translateY(0px); 
+                -o-transform: translateY(0px);
+                -ms-transform: translateY(0px);
+                -webkit-transform: translateY(0px);
+            opacity: 1;       
+        }
+
+    #blocco-contatti{
+        position: absolute;
+        top: 66%;
+        left: 0;
+        right: 0;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 2vw;
+        transform: translate(0, 0);
+            -o-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+            -webkit-transform: translate(0, 0);
+    }
+        #blocco-contatti #blocco-contatti-titolo{
+            transform: translateY(0px);    
+                -o-transform: translateY(0px);
+                -ms-transform: translateY(0px);
+                -webkit-transform: translateY(0px);    
+        }
+        #blocco-contatti #visualizza-contatti{
+            transform: translateY(0px); 
+                -o-transform: translateY(0px);
+                -ms-transform: translateY(0px);
+                -webkit-transform: translateY(0px);
+            opacity: 1;       
+        }
+}
