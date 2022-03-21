@@ -1,0 +1,16 @@
+/* line 1, ../New Sito ReyOasi/scss/style.scss */
+#hide {
+  width: 90vmax;
+  height: 90vmax;
+}
+
+/* line 5, ../New Sito ReyOasi/scss/style.scss */
+#blocco_testo {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=style.css.map */
