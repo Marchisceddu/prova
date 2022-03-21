@@ -323,7 +323,7 @@ body::after{
 
     #blocco-menu{
         position: relative;
-        top: 22%;
+        top: -22%;
         left: 0;
         right: 0;
         color: rgba(255, 255, 255, 0.8);
@@ -349,7 +349,7 @@ body::after{
 
     #blocco-contatti{
         position: relative;
-        top: 22%;
+        top: -22%;
         left: 0;
         right: 0;
         color: rgba(255, 255, 255, 0.8);
