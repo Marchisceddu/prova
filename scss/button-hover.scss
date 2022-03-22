@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+$white: #fff;
+
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65, 0, 0.076, 1)) {
+    transition: $property $duration $ease;
+} 
+
+@mixin sp-layout {
+    @media screen and (max-width: 800px) {
+      @content;
+    }
+}
+
+@mixin bg1 {
+    background-image: radial-gradient( circle farthest-corner at -8.9% 51.2%,  rgba(255,124,0,1) 0%, rgba(255,124,0,1) 15%, rgba(255,163,77,1) 20%, rgba(255,163,77,1) 23%, rgba(19,30,37,1) 25%, rgb(32, 46, 54) 60% );}
+@mixin bg2 {
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+}
+@mixin bg3 {
+    background-image: radial-gradient( circle 603px at 32.8% 51%,  rgba(253,185,51,1) 0%, rgba(253,211,117,1) 90.3% );
+}
+@mixin bg4 {
+    background-image: radial-gradient(circle farthest-corner at -8.9% 51.2%,  rgba(255,124,0,1) 0%, rgba(255,124,0,1) 15.9%, rgba(255,163,77,1) 15.9%, rgba(255,163,77,1) 24.4%, rgba(19,30,37,1) 24.5%, rgba(19,30,37,1) 66%);
+}
+
+.learn-more {
+    // font-family: 'Mukta', sans-serif;
+    font-family: 'Lora', serif;
+
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+
+    width: 12rem; 
+    height: auto;
+
+    @include sp-layout {
+        width: 9rem; 
+    }
+
+    .circle {
+        @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+        @include bg1();
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem; 
+        height: 3rem;
+        border-radius: 1.625rem;
+        box-shadow: 5px 5px 10px 5px rgba(124, 124, 124, 0.4);
+
+        @include sp-layout {
+            width: 2.6rem; 
+            height: 2.6rem;
+        }
+
+        .icon {
+            @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: $white;
+
+            &.arrow {
+                @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+                left: 0.625rem;
+                width: 1.125rem;
+                height: 0.125rem;
+                background: none;
+
+                
+                @include sp-layout(){
+                    left: 0.45rem;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    top: -0.25rem;
+                    right: 0.0625rem;
+                    width: 0.625rem;
+                    height: 0.625rem;
+                    border-top: 0.125rem solid #fff;
+                    border-right: 0.125rem solid #fff;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+
+    .button-text {
+        @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.70rem 0;
+        margin: 0 0 0 1.9rem;
+        color: $white;
+        font-size: 120%;
+        font-weight: 500;
+        line-height: 1.6;
+        text-align: center;
+
+        
+        @include sp-layout {
+            padding: 0.60rem 0;
+            font-size: 105%;
+        }
+    }
+
+    &:hover {
+        .circle {
+            width: 100%;
+
+            .icon {
+                &.arrow {
+                    left: 0.2rem;
+                    background: $white;
+                    transform: translate(1rem, 0);
+                }
+            }
+        }
+
+        .button-text {
+            color: $white;
+        }
+    }
+}
