@@ -2,7 +2,7 @@
 	"version": 3,
 	"file": "style.css",
 	"sources": [
-		"../scss/style.scss"
+		"../../scss/style.scss"
 	],
 	"sourcesContent": [
 		"#hide{\r\n    width: 90vmax;\r\n    height: 90vmax;\r\n}\r\n#blocco_testo{\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    padding: 0;\r\n    text-align: center;\r\n    list-style-type: none;\r\n\r\n}"
