@@ -1,33 +1,52 @@
-//Funzione per far scomparire/riapparire il documento all'apertura/chiusura del menu
-function hide_element (idhome, idsection){
+let mobile_screen = window.matchMedia("(max-width: 800px)");
+
+function checked_menu (idhome, idsection, idfisso, idnav, idlogo){
     let home = document.getElementById(idhome);
     let section = document.getElementById(idsection);
+    let fisso = document.getElementById(idfisso);
+    let nav = document.getElementById(idnav);
+    let logo = document.getElementById(idlogo);
 
-    if (home.style.opacity=="1"){
+    if ($("#burger-toggle").is(":checked"))
+    {
+        //Setta lo sfondo del menu con il blur e meno luminosità
+        fisso.style.filter = "blur(2px) brightness(60%)";
+        fisso.style.webkitFilter = "blur(2px) brightness(60%)";
+
+        //Scompare il documento all'apertura del menu
+        if (mobile_screen.matches){
+            nav.style.transform = "translateY(-100%)";
+            nav.style.opacity = "0";  
+        }
+        else{
+            logo.style.opacity = "0";
+        }
         section.style.display = "none";
         home.style.opacity = "0";
+
+        $('.images').slick('slickPlay'); //Attiva l'animazione delle img
     }
-    else{
+    else
+    {
+        //Toglie gli effetti allo sfondo
+        fisso.style.filter = "blur(0px) brightness(100%)";
+        fisso.style.webkitFilter = "blur(0px) brightness(100%)";
+
+        //Appare il documento alla chiusura del menu
         window.setTimeout(function()
         {
             home.style.opacity = "1";
             section.style.display = "block";
-        },160);
-    }
-}
 
-//Funzione per settare lo sfondo del menu con il blu e meno luminosità
-function background_blur (id){
-    let block = document.getElementById(id);
+            if (mobile_screen.matches){
+                nav.style.transform = "translateY(0%)";
+                nav.style.opacity = "1";  
+            }
+            else{
+                logo.style.opacity = "1";
+            }
+        },210);
 
-    if ($("#burger-toggle").is(":checked")){
-        block.style.filter = "blur(2px) brightness(60%)";
-        block.style.webkitFilter = "blur(2px) brightness(60%)";
-        $('.images').slick('slickPlay'); //Attiva l'animazione delle img
-    }
-    else{
-        block.style.filter = "blur(0px) brightness(100%)";
-        block.style.webkitFilter = "blur(0px) brightness(100%)";
         $('.images').slick('slickPause'); //Mette in pausa l'animazione delle img
         $('.images').slick('slickGoTo','0','true'); //Resetta la posizione delle img
     }
@@ -54,8 +73,8 @@ $(document).ready(function(){
     $('.images').slick({
       dots: false,
       infinite: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
+      autoplay: false,
+      autoplaySpeed: 2000,
       speed: 800,
       edgeFriction: 0,
       touchThreshold: 5,

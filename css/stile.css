@@ -76,25 +76,35 @@ body::after{
             -webkit-filter: blur(0px) brightness(100%);
     }
 
-    #blocco_logo{
+    
+    #stiky-nav{
         position: fixed;
-        top: 3vmax; 
-        left: 4vmax;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        transition: 0.5s cubic-bezier(.17,.67,.83,.70);
     }
-        #logo{
-            display: inline-block;
-            float: left;
+        #blocco_logo{
+            /* position: absolute;
+            top: 3vmax; 
+            left: 4vmax; */
+            padding-top: 3vmax;
+            padding-left: 4vmax;    
         }
-        #logo img{
-            width: 50px;
-        }
-        #scritta_logo{
-            display: inline-block;
-            padding-top: 15px;
-            margin-left: 10px;
-            font-size: 25px;
-            font-family: 'Times New Roman', Times, serif;
-        }
+            #logo{
+                display: inline-block;
+                float: left;
+            }
+            #logo img{
+                width: 50px;
+            }
+            #scritta_logo{
+                display: inline-block;
+                padding-top: 15px;
+                margin-left: 10px;
+                font-size: 25px;
+                font-family: 'Times New Roman', Times, serif;
+            }
 
     #home_testo{
         position: fixed;
@@ -290,23 +300,29 @@ body::after{
 
 @media screen and (max-width: 800px), screen and (orientation: portrait){
     /* Home */
-    #blocco_logo{
-        top: 4vmax; 
-        left: 5vmax;
+    #stiky-nav{
+        background: rgba(19,30,37,1);
     }
-        #scritta_logo{
-            opacity: 1;
-            padding-top: 15px;
-            font-size: 22px;
-            margin-left: 5px;
+        #blocco_logo{
+            /* top: 4vmax; 
+            left: 5vmax; */
+            padding-top: 3vmax;
+            padding-left: 4vmax;
+            margin-bottom: 5vmax;
         }
+            #scritta_logo{
+                opacity: 1;
+                padding-top: 15px;
+                font-size: 22px;
+                margin-left: 5px;
+            }
 
     #fisso{
         height: 100vmax;
     }
         #home_testo{
             position: absolute;
-            top: 20%;
+            top: 17%;
             left: 50%;
             transform: translate(-50%, 0);
                 -o-transform: translate(-50%, 0);
@@ -330,9 +346,9 @@ body::after{
         left: 50%;
         color: rgba(255, 255, 255, 0.8);
         font-size: 2vw;
-        transform: translate(0, 0);
-            -o-transform: translate(0, 0);
-            -ms-transform: translate(0, 0);
+        transform: translate(-50%, 0);
+            -o-transform: translate(-50%, 0);
+            -ms-transform: translate(-50%, 0);
             -webkit-transform: translate(-50%, 0);
     }
         #blocco-menu #blocco-menu-titolo{
@@ -352,14 +368,13 @@ body::after{
     #blocco-contatti{
         position: absolute;
         top: 65%;
-        left: 0;
-        right: 0;
+        left: 50%;
         color: rgba(255, 255, 255, 0.8);
         font-size: 2vw;
-        transform: translate(0, 0);
-            -o-transform: translate(0, 0);
-            -ms-transform: translate(0, 0);
-            -webkit-transform: translate(0, 0);
+        transform: translate(-50%, 0);
+            -o-transform: translate(-50%, 0);
+            -ms-transform: translate(-50%, 0);
+            -webkit-transform: translate(-50%, 0);
     }
         #blocco-contatti #blocco-contatti-titolo{
             transform: translateY(0px);    

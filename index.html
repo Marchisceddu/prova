@@ -24,13 +24,14 @@
 
     <header id="home">
 
-      <input type="checkbox" id="burger-toggle" onclick="hide_element('hide', 'ciao'), background_blur ('fisso')">
-      <label for="burger-toggle" class="burger-menu">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-      </label>
-      <div class="menu">
+      <nav>
+        <input type="checkbox" id="burger-toggle" onclick="checked_menu ('hide', 'ciao', 'fisso', 'stiky-nav', 'blocco_logo')">
+        <label for="burger-toggle" class="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+        <nav class="menu">
           <div class="menu-inner">
         
             <ul class="menu-nav">
@@ -69,19 +70,18 @@
             </div>
         
           </div>
-      </div>
+        </nav>
+  
+        <nav id="stiky-nav">  
+          <div id="blocco_logo">
+            <div id="logo"><img src="img/logo/LOGO.png" alt="LOGO"></div>
+            <div id="scritta_logo">ReyOasi</div>    
+          </div>
+        </nav>
+      </nav>
 
-      <div id="hide" style="opacity: 1;">
-
-        <div id="blocco_logo">
-          <div id="logo"><img src="img/logo/LOGO.png" alt="LOGO"></div>
-          <div id="scritta_logo">ReyOasi</div>    
-        </div>
-
+      <div id="hide">
         <div id="fisso">
-          <!-- <div style="position: relative; max-width: 100%">
-
-          </div> -->
           <div id="home_testo">
             <p id="home_testo_titolo">Rey Oasi</p>
             <p id="home_testo_sottotitolo">Bar - Gelateria - Ristorante - Pizzeria</p>
@@ -130,7 +130,7 @@
      width: 100%; 
      background-color: #faebd7;  
      transition: 0.3s;
-     z-index: 3;"
+     z-index: 2;"
      id="ciao">
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </section>

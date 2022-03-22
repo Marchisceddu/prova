@@ -108,8 +108,8 @@
 @media screen and (max-width: 850px) {
   /* line 85, ../New Sito ReyOasi/scss/hamburger-menu.scss */
   .burger-menu {
-    top: 4vmax;
-    right: 5vmax;
+    top: 3vmax;
+    right: 4vmax;
   }
 }
 
@@ -159,7 +159,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--primary-color-darker);
   transform: translateX(-100%);
   -o-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
@@ -170,7 +169,7 @@
   -webkit-transition: 0.5s;
 }
 
-/* line 154, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 153, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .burger-menu .line:nth-child(2)::after {
   transition-delay: 0s;
   -o-transition-delay: 0s;
@@ -178,7 +177,7 @@
   -webkit-transition-delay: 0s;
 }
 
-/* line 154, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 153, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .burger-menu .line:nth-child(3)::after {
   transition-delay: 0s;
   -o-transition-delay: 0s;
@@ -186,7 +185,7 @@
   -webkit-transition-delay: 0s;
 }
 
-/* line 164, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 163, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .burger-menu:hover .line::after {
   background: rgba(255, 255, 255, 0.8);
   transform: translateX(0);
@@ -195,7 +194,7 @@
   -webkit-transform: translateX(0);
 }
 
-/* line 174, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 173, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu {
   position: absolute;
   top: 0;
@@ -218,13 +217,13 @@
 }
 
 @media screen and (max-width: 850px) {
-  /* line 174, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+  /* line 173, ../New Sito ReyOasi/scss/hamburger-menu.scss */
   .menu {
     display: block;
   }
 }
 
-/* line 198, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 197, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu-nav {
   display: flex;
   flex-wrap: wrap;
@@ -235,19 +234,19 @@
 }
 
 @media screen and (max-width: 850px) {
-  /* line 198, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+  /* line 197, ../New Sito ReyOasi/scss/hamburger-menu.scss */
   .menu-nav {
     flex-direction: column;
     margin-top: 100px;
   }
 }
 
-/* line 211, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 210, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu-nav-item {
   flex: 1;
 }
 
-/* line 215, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 214, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu-nav-link {
   position: relative;
   display: inline-flex;
@@ -256,12 +255,12 @@
   text-decoration: none;
 }
 
-/* line 222, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 221, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu-nav-link span {
   overflow: hidden;
 }
 
-/* line 225, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 224, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu-nav-link span div {
   transform: translateY(102%);
   -o-transform: translateY(102%);
@@ -269,7 +268,7 @@
   -webkit-transform: translateY(102%);
 }
 
-/* line 233, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 232, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu-nav-link::after {
   position: absolute;
   content: "";
@@ -277,7 +276,7 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background: var(--primary-color);
+  background: #612626;
   transform: scaleX(0);
   -o-transform: scaleX(0);
   -ms-transform: scaleX(0);
@@ -292,7 +291,7 @@
   -webkit-transition: transform 0.5s;
 }
 
-/* line 256, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 255, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu-nav-link:hover::after {
   transform: scaleX(1);
   -o-transform: scaleX(1);
@@ -304,20 +303,20 @@
   -webkit-transform-origin: left;
 }
 
-/* line 269, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 268, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .gallery {
   margin-top: 60px;
   text-align: center;
 }
 
-/* line 274, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 273, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .title {
   font-size: 24px;
   color: white;
   overflow: hidden;
 }
 
-/* line 279, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 278, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .title p {
   font-size: 23px;
   letter-spacing: 2px;
@@ -328,7 +327,7 @@
   font-family: 'Dancing Script', cursive;
 }
 
-/* line 291, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 290, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .images {
   margin-top: 36px;
   display: flex;
@@ -336,13 +335,13 @@
 }
 
 @media screen and (max-width: 850px) {
-  /* line 291, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+  /* line 290, ../New Sito ReyOasi/scss/hamburger-menu.scss */
   .menu .images {
     justify-content: center;
   }
 }
 
-/* line 300, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 299, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .images .image-link {
   width: 15vw;
   margin: 0 12px;
@@ -350,14 +349,14 @@
 }
 
 @media screen and (max-width: 850px) {
-  /* line 300, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+  /* line 299, ../New Sito ReyOasi/scss/hamburger-menu.scss */
   .menu .images .image-link {
     width: 40%;
     margin: 0 12px 12px 12px;
   }
 }
 
-/* line 310, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 309, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .images .image-link .image {
   position: relative;
   transition: 0.6s;
@@ -368,7 +367,7 @@
   justify-content: center;
 }
 
-/* line 319, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 318, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .images .image-link .image::before {
   position: absolute;
   content: attr(data-label);
@@ -389,7 +388,7 @@
   -webkit-transition: 0.4s;
 }
 
-/* line 340, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 339, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .images .image-link:hover .image {
   transform: scale(1.15);
   -o-transform: scale(1.15);
@@ -397,12 +396,12 @@
   -webkit-transform: scale(1.15);
 }
 
-/* line 346, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 345, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .images .image-link:hover .image::before {
   opacity: 1;
 }
 
-/* line 352, ../New Sito ReyOasi/scss/hamburger-menu.scss */
+/* line 351, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .images img {
   height: 250px;
   transform: translateY(102%);
