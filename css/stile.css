@@ -301,7 +301,7 @@ body::after{
 @media screen and (max-width: 800px), screen and (orientation: portrait){
     /* Home */
     #stiky-nav{
-        background: rgba(19,30,37,1);
+        background: linear-gradient(rgba(19,30,37,1) 40%, rgb(25, 40, 48) 60% , rgba(32, 46, 54, 0.9) 80%);
     }
         #blocco_logo{
             /* top: 4vmax; 

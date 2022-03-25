@@ -1,12 +1,353 @@
-#hide{
-    width: 90vmax;
-    height: 90vmax;
-}
-#blocco_testo{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    text-align: center;
-    list-style-type: none;
+/* GLOBALE */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rozha+One&display=swap');
 
+@mixin mobile-layaut {
+    @media screen and (max-width: 800px), screen and (orientation: portrait) {
+        @content;
+      }
+}
+
+@mixin transition ($durata) {
+    -webkit-transition: $durata;
+       -moz-transition: $durata;
+         -o-transition: $durata;
+            transition: $durata;
+}
+
+@mixin transform ($var) {
+    -webkit-transform: $var;
+        -ms-transform: $var;
+         -o-transform: $var;
+            transform: $var;
+}
+
+@mixin filter ($var) {
+    -webkit-filter: $var;
+            filter: $var;
+}
+
+*, *::after, *::before {
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: rgba(115, 211, 255, 0.3);
+}
+::-moz-selection {
+    background-color: rgba(115, 211, 255, 0.3);
+}
+
+::-webkit-scrollbar {
+    width: 0; 
+    background: transparent; 
+}
+
+body, html {
+    --sfondo: ;
+
+    background: #353535;
+    color: white;
+    margin: 0;
+    height: 100%;
+    font-family: 'Rozha One', serif;
+
+    &::after{
+        content:"";
+        position:fixed; /* stretch a fixed position to the whole screen */
+        top:0;
+        left:0;
+        right:0;
+        height: 100vh; /* fix for mobile browser address bar appearing disappearing */
+
+        background: var(--sfondo) no-repeat center center;
+
+        -webkit-background-size: cover;
+           -moz-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
+
+        @include filter(blur(2px) brightness(60%));
+    }
+}
+
+/* HOME */
+#sfondo{
+    height: 100%;
+    @include filter(blur(2px) brightness(60%));
+}
+
+#home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    opacity: 1; 
+    @include transition(0.5s);
+
+    #stiky-nav{
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        @include transition(0.5s cubic-bezier(.17,.67,.83,.70));
+
+        @include mobile-layaut{
+            $bg_nav_color: rgba(19,30,37,1) 40%, rgb(25, 40, 48) 60% , rgba(32, 46, 54, 0.9) 80%;
+            background: -webkit-linear-gradient($bg_nav_color);
+            background: linear-gradient($bg_nav_color);
+        }
+
+        #blocco_logo{
+            /* position: absolute;
+            top: 3vmax; 
+            left: 4vmax; */
+            padding-top: 3vmax;
+            padding-left: 4vmax; 
+            
+            @include mobile-layaut{
+                /* top: 4vmax; 
+                left: 5vmax; */
+                padding-top: 3vmax;
+                padding-left: 4vmax;
+                margin-bottom: 5vmax;
+            }
+
+            #logo{
+                display: inline-block;
+                float: left;
+
+                & img{
+                    width: 50px;
+                }
+            }
+
+            #scritta_logo{
+                display: inline-block;
+                margin-left: 10px;
+                padding-top: 15px;
+                font-size: 25px;
+                font-family: 'Times New Roman', Times, serif;
+
+                @include mobile-layaut{
+                    opacity: 1;
+                    padding-top: 15px;
+                    font-size: 22px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    #fisso{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        @include transition(0.5s);
+        @include filter(blur(0px) brightness(100%));
+
+        @include mobile-layaut{
+            height: 100vmax;
+        }
+
+        #home_testo{
+            position: fixed;
+            top: 0;
+            left: 50%;
+            margin: 0px;
+            text-align: center;
+            @include transform(translate(-50%, 100%));
+
+            @include mobile-layaut{
+                position: absolute;
+                top: 17%;
+                left: 50%;
+                @include transform(translate(-50%, 0));
+            }
+
+            &_titolo{
+                font-size: 480%;
+                display: block;
+                margin: 0px;
+
+                @include mobile-layaut{
+                    font-size: 10vw;
+                    margin: 10px;
+                }
+            }
+
+            &_sottotitolo{
+                font-size: 130%;
+                color: rgb(235, 235, 235);
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                letter-spacing: 1px;
+
+                @include mobile-layaut{
+                    text-align: center;
+                    font-size: 4vw;
+                    margin: 10px;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        #blocco-menu{
+            position: absolute;
+            top: -20%;
+            left: 25%;
+            margin: 0px;
+            text-align: center;
+            @include transform(translate(-50%, 230%));
+
+            @include mobile-layaut{
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 2vw;
+                @include transform(translate(-50%, 0));
+            }
+
+            &-titolo{
+                font-size: 400%;
+                text-decoration: none;
+                color: rgba(255, 255, 255, 1);
+                display: block;
+                margin: 0px;
+                @include transform(translateY(30px));           
+                @include transition(0.5s);
+
+                @include mobile-layaut{
+                    @include transform(translateY(0));           
+                }
+            }
+
+            #visualizza-menu{
+                opacity: 0;
+                @include transform(translateY(-10px));           
+                @include transition(0.5s);
+
+                @include mobile-layaut{
+                    opacity: 1;   
+                    @include transform(translateY(0)); 
+                }
+
+                & p{
+                    font-family: 'Dancing Script', cursive;
+                    font-size: 130%;
+                    margin-top: 0;
+                }
+            }
+
+            &:hover{
+                #blocco-menu-titolo{
+                    color: rgba(255, 255, 255, 1);
+                    @include transform(translateY(0px));
+                }
+ 
+                #visualizza-menu{
+                    opacity: 1;   
+                    @include transform(translateY(0px));    
+                }
+            }
+        }
+
+        #blocco-contatti{
+            position: absolute;
+            top: -20%; /*-10vmax*/
+            left: 75%;
+            margin: 0px;
+            text-align: center;
+            @include transform(translate(-50%, 230%));
+
+            @include mobile-layaut{
+                position: absolute;
+                top: 63%;
+                left: 50%;
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 2vw;
+                @include transform(translate(-50%, 0));
+            }
+
+            &-titolo{
+                font-size: 400%;
+                text-decoration: none;
+                color: rgba(255, 255, 255, 1);
+                display: block;
+                margin: 0px;
+                @include transform(translateY(30px));           
+                @include transition(0.5s);
+
+                @include mobile-layaut{
+                    @include transform(translateY(0));           
+                }
+            }
+
+            #visualizza-contatti{
+                opacity: 0;
+                @include transform(translateY(-10px));           
+                @include transition(0.5s);
+
+                @include mobile-layaut{
+                    opacity: 1;   
+                    @include transform(translateY(0));           
+                }
+
+                & p{
+                    font-family: 'Dancing Script', cursive;
+                    font-size: 130%;
+                    margin-top: 0;
+                }
+            }
+
+            &:hover{
+                #blocco-contatti-titolo{
+                    color: rgba(255, 255, 255, 1);
+                    @include transform(translateY(0px));
+                }
+ 
+                #visualizza-contatti{
+                    opacity: 1;   
+                    @include transform(translateY(0px));    
+                }
+            }
+        }
+    }
+
+    #info{
+        cursor: pointer;
+        position: absolute;
+        bottom: 1%;
+        left: 50%;
+        margin: 0px;
+        font-size: 15px; 
+        letter-spacing: 1.5px;
+        line-height: 1px;
+        color: rgb(235, 235, 235);
+        text-align: center;
+        @include transform(translate(-50%, 0));
+        @include transition(1s);
+
+        & p{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .arrow-down{
+            margin-top: 30%;
+            width: 10px; 
+            @include filter(invert(97%) sepia(0%) saturate(6321%) hue-rotate(193deg) brightness(122%) contrast(84%));
+        }
+
+        &:hover{
+            color: rgb(255, 255, 255);
+
+            .arrow-down{
+                @include filter(invert(99%) sepia(3%) saturate(104%) hue-rotate(18deg) brightness(116%) contrast(100%));
+            }
+        }
+    }
 }
