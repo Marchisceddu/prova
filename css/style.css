@@ -310,7 +310,14 @@ body::after, html::after {
   margin-top: 0;
 }
 
-/* line 246, ../New Sito ReyOasi/scss/style.scss */
+@media screen and (max-width: 800px), screen and (orientation: portrait) {
+  /* line 238, ../New Sito ReyOasi/scss/style.scss */
+  #home #fisso #blocco-menu #visualizza-menu p {
+    font-size: 150%;
+  }
+}
+
+/* line 250, ../New Sito ReyOasi/scss/style.scss */
 #home #fisso #blocco-menu:hover #blocco-menu-titolo {
   color: white;
   -webkit-transform: translateY(0px);
@@ -319,7 +326,7 @@ body::after, html::after {
   transform: translateY(0px);
 }
 
-/* line 251, ../New Sito ReyOasi/scss/style.scss */
+/* line 255, ../New Sito ReyOasi/scss/style.scss */
 #home #fisso #blocco-menu:hover #visualizza-menu {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -328,7 +335,7 @@ body::after, html::after {
   transform: translateY(0px);
 }
 
-/* line 258, ../New Sito ReyOasi/scss/style.scss */
+/* line 262, ../New Sito ReyOasi/scss/style.scss */
 #home #fisso #blocco-contatti {
   position: absolute;
   top: -20%;
@@ -343,10 +350,10 @@ body::after, html::after {
 }
 
 @media screen and (max-width: 800px), screen and (orientation: portrait) {
-  /* line 258, ../New Sito ReyOasi/scss/style.scss */
+  /* line 262, ../New Sito ReyOasi/scss/style.scss */
   #home #fisso #blocco-contatti {
     position: absolute;
-    top: 63%;
+    top: 65%;
     left: 50%;
     color: rgba(255, 255, 255, 0.8);
     font-size: 2vw;
@@ -357,7 +364,7 @@ body::after, html::after {
   }
 }
 
-/* line 275, ../New Sito ReyOasi/scss/style.scss */
+/* line 279, ../New Sito ReyOasi/scss/style.scss */
 #home #fisso #blocco-contatti-titolo {
   font-size: 400%;
   text-decoration: none;
@@ -375,7 +382,7 @@ body::after, html::after {
 }
 
 @media screen and (max-width: 800px), screen and (orientation: portrait) {
-  /* line 275, ../New Sito ReyOasi/scss/style.scss */
+  /* line 279, ../New Sito ReyOasi/scss/style.scss */
   #home #fisso #blocco-contatti-titolo {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -384,7 +391,7 @@ body::after, html::after {
   }
 }
 
-/* line 289, ../New Sito ReyOasi/scss/style.scss */
+/* line 293, ../New Sito ReyOasi/scss/style.scss */
 #home #fisso #blocco-contatti #visualizza-contatti {
   opacity: 0;
   -webkit-transform: translateY(-10px);
@@ -398,7 +405,7 @@ body::after, html::after {
 }
 
 @media screen and (max-width: 800px), screen and (orientation: portrait) {
-  /* line 289, ../New Sito ReyOasi/scss/style.scss */
+  /* line 293, ../New Sito ReyOasi/scss/style.scss */
   #home #fisso #blocco-contatti #visualizza-contatti {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -408,14 +415,21 @@ body::after, html::after {
   }
 }
 
-/* line 299, ../New Sito ReyOasi/scss/style.scss */
+/* line 303, ../New Sito ReyOasi/scss/style.scss */
 #home #fisso #blocco-contatti #visualizza-contatti p {
   font-family: 'Dancing Script', cursive;
   font-size: 130%;
   margin-top: 0;
 }
 
-/* line 307, ../New Sito ReyOasi/scss/style.scss */
+@media screen and (max-width: 800px), screen and (orientation: portrait) {
+  /* line 303, ../New Sito ReyOasi/scss/style.scss */
+  #home #fisso #blocco-contatti #visualizza-contatti p {
+    font-size: 150%;
+  }
+}
+
+/* line 315, ../New Sito ReyOasi/scss/style.scss */
 #home #fisso #blocco-contatti:hover #blocco-contatti-titolo {
   color: white;
   -webkit-transform: translateY(0px);
@@ -424,7 +438,7 @@ body::after, html::after {
   transform: translateY(0px);
 }
 
-/* line 312, ../New Sito ReyOasi/scss/style.scss */
+/* line 320, ../New Sito ReyOasi/scss/style.scss */
 #home #fisso #blocco-contatti:hover #visualizza-contatti {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -433,7 +447,7 @@ body::after, html::after {
   transform: translateY(0px);
 }
 
-/* line 320, ../New Sito ReyOasi/scss/style.scss */
+/* line 328, ../New Sito ReyOasi/scss/style.scss */
 #home #info {
   cursor: pointer;
   position: absolute;
@@ -455,13 +469,13 @@ body::after, html::after {
   transition: 1s;
 }
 
-/* line 334, ../New Sito ReyOasi/scss/style.scss */
+/* line 342, ../New Sito ReyOasi/scss/style.scss */
 #home #info p {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
-/* line 339, ../New Sito ReyOasi/scss/style.scss */
+/* line 347, ../New Sito ReyOasi/scss/style.scss */
 #home #info .arrow-down {
   margin-top: 30%;
   width: 10px;
@@ -469,12 +483,12 @@ body::after, html::after {
   filter: invert(97%) sepia(0%) saturate(6321%) hue-rotate(193deg) brightness(122%) contrast(84%);
 }
 
-/* line 345, ../New Sito ReyOasi/scss/style.scss */
+/* line 353, ../New Sito ReyOasi/scss/style.scss */
 #home #info:hover {
   color: white;
 }
 
-/* line 348, ../New Sito ReyOasi/scss/style.scss */
+/* line 356, ../New Sito ReyOasi/scss/style.scss */
 #home #info:hover .arrow-down {
   -webkit-filter: invert(99%) sepia(3%) saturate(104%) hue-rotate(18deg) brightness(116%) contrast(100%);
   filter: invert(99%) sepia(3%) saturate(104%) hue-rotate(18deg) brightness(116%) contrast(100%);

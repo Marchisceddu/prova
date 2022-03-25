@@ -239,6 +239,10 @@ body, html {
                     font-family: 'Dancing Script', cursive;
                     font-size: 130%;
                     margin-top: 0;
+
+                    @include mobile-layaut{
+                        font-size: 150%;
+                    }
                 }
             }
 
@@ -265,7 +269,7 @@ body, html {
 
             @include mobile-layaut{
                 position: absolute;
-                top: 63%;
+                top: 65%;
                 left: 50%;
                 color: rgba(255, 255, 255, 0.8);
                 font-size: 2vw;
@@ -300,6 +304,10 @@ body, html {
                     font-family: 'Dancing Script', cursive;
                     font-size: 130%;
                     margin-top: 0;
+
+                    @include mobile-layaut{
+                        font-size: 150%;
+                    }
                 }
             }
 
