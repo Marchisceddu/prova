@@ -81,7 +81,6 @@ body, html {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
     height: 100%;
     width: 100%;
     opacity: 1; 
@@ -89,8 +88,8 @@ body, html {
 
     #stiky-nav{
         position: fixed;
+        z-index: 100;
         top: 0;
-        z-index: 1;
         width: 100%;
         @include transition(0.5s cubic-bezier(.17,.67,.83,.70));
 
@@ -149,6 +148,7 @@ body, html {
 
     #fisso{
         position: fixed;
+        z-index: 1;
         width: 100%;
         height: 100vmin;
         @include transition(0.5s);
@@ -334,6 +334,7 @@ body, html {
         position: absolute;
         bottom: 1%;
         left: 50%;
+        z-index: 1;
         margin: 0px;
         font-size: 15px; 
         letter-spacing: 1.5px;
@@ -362,4 +363,14 @@ body, html {
             }
         }
     }
+}
+
+#chi-siamo{
+    position: relative;
+    z-index: 1;
+    width: 100%; 
+    background: #faebd7;  
+    @include transition(0.3s);
+
+
 }

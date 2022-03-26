@@ -16,7 +16,7 @@
   position: absolute;
   appearance: none;
   opacity: 0;
-  z-index: 3;
+  z-index: 101;
 
   &:checked {
     & ~ .menu {
@@ -88,7 +88,7 @@
   position: fixed;
   top: 3vmax;
   right: 4vmax;
-  z-index: 3;
+  z-index: 101;
   display: block;
   width: var(--burger-menu-radius);
   height: var(--burger-menu-radius);
