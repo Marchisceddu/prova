@@ -1,4 +1,5 @@
 let mobile_screen = window.matchMedia("(max-width: 800px)");
+let vertical_screen = window.matchMedia("(orientation: portrait)");
 
 function checked_menu (idhome, idsection, idfisso, idnav, idlogo){
     let home = document.getElementById(idhome);
@@ -14,7 +15,7 @@ function checked_menu (idhome, idsection, idfisso, idnav, idlogo){
         fisso.style.webkitFilter = "blur(2px) brightness(60%)";
 
         //Scompare il documento all'apertura del menu
-        if (mobile_screen.matches){
+        if (mobile_screen.matches || vertical_screen){
             nav.style.transform = "translateY(-100%)";
             nav.style.opacity = "0";  
         }
