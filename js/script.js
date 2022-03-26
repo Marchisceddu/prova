@@ -1,5 +1,5 @@
 let mobile_screen = window.matchMedia("(max-width: 800px)");
-let vertical_screen = window.matchMedia("(orientation: portrait)").matches;
+let vertical_screen = window.matchMedia("(orientation: portrait)");
 
 function checked_menu (idhome, idsection, idfisso, idnav, idlogo){
     let home = document.getElementById(idhome);
@@ -15,7 +15,7 @@ function checked_menu (idhome, idsection, idfisso, idnav, idlogo){
         fisso.style.webkitFilter = "blur(2px) brightness(60%)";
 
         //Scompare il documento all'apertura del menu
-        if (mobile_screen.matches || vertical_screen){
+        if (mobile_screen.matches || vertical_screen.matches){
             nav.style.transform = "translateY(-100%)";
             nav.style.opacity = "0";  
         }
@@ -39,7 +39,7 @@ function checked_menu (idhome, idsection, idfisso, idnav, idlogo){
             home.style.opacity = "1";
             section.style.display = "block";
 
-            if (mobile_screen.matches || vertical_screen){
+            if (mobile_screen.matches || vertical_screen.matches){
                 nav.style.transform = "translateY(0%)";
                 nav.style.opacity = "1";  
             }
