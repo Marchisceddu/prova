@@ -116,7 +116,7 @@
 @media screen and (max-width: 800px) {
   /* line 108, ../New Sito ReyOasi/scss/button-hover.scss */
   .learn-more .button-text {
-    padding: 7% 0;
+    padding: 0.65rem 0;
     font-size: 105%;
   }
 }
