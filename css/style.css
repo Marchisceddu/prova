@@ -148,7 +148,7 @@ body::after, html::after {
 #home #fisso {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vmin;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
@@ -166,7 +166,7 @@ body::after, html::after {
 
 /* line 155, ../New Sito ReyOasi/scss/style.scss */
 #home #fisso #home_testo {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 50%;
   margin: 0px;
