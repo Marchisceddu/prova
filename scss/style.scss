@@ -121,6 +121,10 @@ body, html {
 
                 & img{
                     width: 50px;
+
+                    @include mobile-layaut{
+                        width: 50px;  
+                    }
                 }
             }
 
@@ -196,7 +200,7 @@ body, html {
 
         #blocco-menu{
             position: absolute;
-            top: 57%;
+            top: 54%;
             left: 25%;
             margin: 0px;
             text-align: center;
@@ -240,7 +244,7 @@ body, html {
                     margin-top: 0;
 
                     @include mobile-layaut{
-                        font-size: 150%;
+                        font-size: 160%;
                     }
                 }
             }
@@ -260,7 +264,7 @@ body, html {
 
         #blocco-contatti{
             position: absolute;
-            top: 57%; /*-10vmax*/ //bug ipad, questo è troppo in alto
+            top: 54%; /*-10vmax*/
             left: 75%;
             margin: 0px;
             text-align: center;
@@ -304,7 +308,7 @@ body, html {
                     margin-top: 0;
 
                     @include mobile-layaut{
-                        font-size: 150%;
+                        font-size: 160%;
                     }
                 }
             }
