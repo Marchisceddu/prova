@@ -104,7 +104,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 0.70rem 0;
+  padding: 0.75rem 0;
   margin: 0 0 0 1.9rem;
   color: #fff;
   font-size: 120%;
@@ -116,24 +116,23 @@
 @media screen and (max-width: 800px) {
   /* line 108, ../New Sito ReyOasi/scss/button-hover.scss */
   .learn-more .button-text {
-    padding: 0.70rem 0;
     font-size: 110%;
   }
 }
 
-/* line 131, ../New Sito ReyOasi/scss/button-hover.scss */
+/* line 130, ../New Sito ReyOasi/scss/button-hover.scss */
 .learn-more:hover .circle {
   width: 100%;
 }
 
-/* line 135, ../New Sito ReyOasi/scss/button-hover.scss */
+/* line 134, ../New Sito ReyOasi/scss/button-hover.scss */
 .learn-more:hover .circle .icon.arrow {
   left: 0.2rem;
   background: #fff;
   transform: translate(1rem, 0);
 }
 
-/* line 143, ../New Sito ReyOasi/scss/button-hover.scss */
+/* line 142, ../New Sito ReyOasi/scss/button-hover.scss */
 .learn-more:hover .button-text {
   color: #fff;
 }
