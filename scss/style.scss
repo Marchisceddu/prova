@@ -95,9 +95,10 @@ body, html {
         @include transition(0.5s cubic-bezier(.17,.67,.83,.70));
 
         @include mobile-layaut{
-            $bg_nav_color: rgba(19,30,37,1) 40%, rgb(25, 40, 48) 60% , rgba(32, 46, 54, 0.9) 80%;
-            background: -webkit-linear-gradient($bg_nav_color);
-            background: linear-gradient($bg_nav_color);
+            $bg_nav_color: rgba(19,30,37,0.8);
+            background: $bg_nav_color;
+            // background: -webkit-linear-gradient($bg_nav_color);
+            // background: linear-gradient($bg_nav_color);
         }
 
         #blocco_logo{
@@ -133,13 +134,14 @@ body, html {
                 margin-left: 10px;
                 padding-top: 15px;
                 font-size: 25px;
-                font-family: 'Times New Roman', Times, serif;
+                letter-spacing: 0px;
+                font-family: 'Times New Roman', Times, serif; //cercare un bel font
+                // font-family: 'Dancing Script', cursive;
 
                 @include mobile-layaut{
                     opacity: 1;
                     padding-top: 15px;
                     font-size: 22px;
-                    margin-left: 5px;
                 }
             }
         }
