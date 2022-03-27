@@ -1,5 +1,6 @@
 /* GLOBALE */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
 
 @mixin mobile-layaut {
     @media screen and (max-width: 800px), screen and (orientation: portrait) {
@@ -327,6 +328,77 @@ body, html {
                 }
             }
         }
+
+        .home-lenguage{
+            cursor: pointer;
+            position: absolute;
+            bottom: 15px;
+            left: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+            @include mobile-layaut{
+                display: none;
+            }
+
+            & ul{
+                display: flex;
+                flex-wrap: wrap;
+                list-style-type: none;
+
+                & li{
+                    color: #adadad;
+                    margin-right: 15px;
+                    font-size: 13px;
+                    @include transition(0.5s);
+
+                    &:hover{
+                        color: #ffffff;
+                        text-decoration-line: underline;
+                        text-underline-offset: 2px;
+                    }
+                }
+            }
+        }
+
+        .home-social{
+            cursor: pointer;
+            position: absolute;
+            bottom: 15px;
+            right: 37px;
+            font-family: Arial, Helvetica, sans-serif;
+
+            @include mobile-layaut{
+                display: none;
+            }
+
+            & ul{
+                display: flex;
+                flex-wrap: wrap;
+                list-style-type: none;
+
+                & li{
+                    margin-left: 15px;
+
+                    .fa{
+                        color: #adadad;
+                        font-size: 18px;
+                        @include transition(0.3s);
+
+                        &-instagram:hover{
+                            color: #ff95fa;
+                        }
+
+                        &-facebook:hover{
+                            color: #3a5ba3;
+                        }
+
+                        &-tripadvisor:hover{
+                            color: #47b62b;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #info{
@@ -371,6 +443,4 @@ body, html {
     width: 100%; 
     background: #faebd7;  
     @include transition(0.3s);
-
-
 }

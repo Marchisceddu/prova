@@ -356,4 +356,69 @@
         -webkit-transform: translateY(102%);
     }
   }
+
+  .lenguage-social{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.lenguage{
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+  & ul{
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type: none;
+
+      & li{
+          color: #adadad;
+          margin-right: 15px;
+          font-size: 13px;
+
+          &:hover{
+              color: #ffffff;
+              text-decoration-line: underline;
+              text-underline-offset: 2px;
+          }
+      }
+  }
+}
+
+.social{
+  cursor: pointer;
+  position: absolute;
+  right: 37px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  & ul{
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type: none;
+
+      & li{
+          margin-left: 15px;
+
+          .fa{
+              color: #adadad;
+              font-size: 18px;
+
+              &-instagram:hover{
+                  color: #ff95fa;
+              }
+
+              &-facebook:hover{
+                  color: #3a5ba3;
+              }
+
+              &-tripadvisor:hover{
+                  color: #47b62b;
+              }
+          }
+      }
+  }
 }
