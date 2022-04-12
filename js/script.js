@@ -78,7 +78,7 @@ $(document).ready(function(){
       autoplaySpeed: 2000,
       speed: 800,
       edgeFriction: 0,
-      touchThreshold: 5,
+      touchThreshold: 8,
       slidesToShow: 4,
       slidesToScroll: 1,
 
