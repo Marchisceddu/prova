@@ -68,7 +68,7 @@ body::after, html::after {
 
 #home #stiky-nav {
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: 0;
   width: 100%;
   -webkit-transition: 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.7);
@@ -80,7 +80,6 @@ body::after, html::after {
 @media screen and (max-width: 800px), screen and (orientation: portrait) {
   #home #stiky-nav {
     z-index: 100;
-    background: rgba(19, 30, 37, 0.8);
   }
 }
 
@@ -92,6 +91,10 @@ body::after, html::after {
   margin-top: 3vmax;
   margin-left: 4vmax;
   width: fit-content;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media screen and (max-width: 800px), screen and (orientation: portrait) {
@@ -104,10 +107,10 @@ body::after, html::after {
   }
 }
 
-#home #stiky-nav #blocco_logo #brushstroke {
+#home #stiky-nav #blocco_logo #brushstroke-logo {
   position: absolute;
-  top: 9px;
-  left: 0px;
+  top: 10px;
+  left: -15px;
   width: 125%;
   height: 125%;
   z-index: -1;

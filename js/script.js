@@ -1,12 +1,13 @@
 let mobile_screen = window.matchMedia("(max-width: 800px)");
 let vertical_screen = window.matchMedia("(orientation: portrait)");
 
-function checked_menu (idhome, idsection, idfisso, idnav, idlogo){
+function checked_menu (idhome, idsection, idfisso, idnav, idlogo, idbrushstroke_menu){
     let home = document.getElementById(idhome);
     let section = document.getElementById(idsection);
     let fisso = document.getElementById(idfisso);
     let nav = document.getElementById(idnav);
     let logo = document.getElementById(idlogo);
+    let brushstroke_menu = document.getElementById(idbrushstroke_menu);
 
     if ($("#burger-toggle").is(":checked"))
     {
@@ -14,14 +15,21 @@ function checked_menu (idhome, idsection, idfisso, idnav, idlogo){
         fisso.style.filter = "blur(2px) brightness(60%)";
         fisso.style.webkitFilter = "blur(2px) brightness(60%)";
 
-        //Scompare il documento all'apertura del menu
-        if (mobile_screen.matches || vertical_screen.matches){
-            nav.style.transform = "translateY(-100%)";
-            nav.style.opacity = "0";  
-        }
-        else{
-            logo.style.opacity = "0";
-        }
+        //Scompare il documento all'apertura del menu 
+        //(vecchio background navbar responsive che si alza)
+        // if (mobile_screen.matches || vertical_screen.matches){
+        //     nav.style.transform = "translateY(-100%)";
+        //     nav.style.opacity = "0";  
+        // }
+        // else{
+        //     logo.style.opacity = "0";
+        //     brushstroke_menu.style.opacity = "0";
+        // }
+
+        //(nuovo)
+        logo.style.opacity = "0";
+        brushstroke_menu.style.opacity = "0";
+
         section.style.display = "none";
         home.style.opacity = "0";
 
@@ -33,19 +41,25 @@ function checked_menu (idhome, idsection, idfisso, idnav, idlogo){
         fisso.style.filter = "blur(0px) brightness(100%)";
         fisso.style.webkitFilter = "blur(0px) brightness(100%)";
 
-        //Appare il documento alla chiusura del menu
+        //Appare il documento alla chiusura del menu 
         window.setTimeout(function()
         {
             home.style.opacity = "1";
             section.style.display = "block";
 
-            if (mobile_screen.matches || vertical_screen.matches){
-                nav.style.transform = "translateY(0%)";
-                nav.style.opacity = "1";  
-            }
-            else{
-                logo.style.opacity = "1";
-            }
+            //(vecchio background navbar responsive che si alza)
+            // if (mobile_screen.matches || vertical_screen.matches){
+            //     nav.style.transform = "translateY(0%)";
+            //     nav.style.opacity = "1";  
+            // }
+            // else{
+            //     logo.style.opacity = "1";
+            //     brushstroke_menu.style.opacity = "0.8";
+            // }
+
+            // (nuovo)
+            logo.style.opacity = "1";
+            brushstroke_menu.style.opacity = "0.8";
         },210);
 
         $('.images').slick('slickPause'); //Mette in pausa l'animazione delle img

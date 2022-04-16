@@ -12,6 +12,13 @@
   }
 }
 
+@mixin transition ($durata) {
+  -webkit-transition: $durata;
+     -moz-transition: $durata;
+       -o-transition: $durata;
+          transition: $durata;
+}
+
 #burger-toggle {
   position: absolute;
   appearance: none;
@@ -96,8 +103,16 @@
   outline: none;
   cursor: pointer;
 
-  // background: rgba(173, 173, 170, 0.6);
-  // border-radius: 15px; vedere pochino
+  #brushstroke-menu{
+    position: absolute;
+    top: 0px; //18.5px, 12
+    right: 0%; //-30px, -70
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    @include transition(0.5s);
+  }
 
   @include sp-layout {
     top: 3vmax;

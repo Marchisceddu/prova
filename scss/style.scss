@@ -89,7 +89,7 @@ body, html {
 
     #stiky-nav{
         position: fixed;
-        z-index: 1;
+        z-index: 100; //impostare a 1 per arrivare il background nella navbar
         top: 0;
         width: 100%;
         @include transition(0.5s cubic-bezier(.17,.67,.83,.70));
@@ -97,7 +97,7 @@ body, html {
         @include mobile-layaut{
             z-index: 100;
             $bg_nav_color: rgba(19,30,37,0.8);
-            background: $bg_nav_color;
+            // background: $bg_nav_color; 
             // background: -webkit-linear-gradient($bg_nav_color);
             // background: linear-gradient($bg_nav_color);
         }
@@ -110,6 +110,7 @@ body, html {
             margin-top: 3vmax;
             margin-left: 4vmax;
             width: fit-content;
+            @include transition(0.5s);
             
             @include mobile-layaut{
                 /* top: 4vmax; 
@@ -119,10 +120,10 @@ body, html {
                 margin-bottom: 5vmax;
             }
 
-            #brushstroke{
+            #brushstroke-logo{
                 position: absolute;
-                top: 9px;
-                left: 0px;
+                top: 10px; //9px prova1, 0px titolo1
+                left: -15px; //0  prova 1, -10px titolo1
                 width: 125%;
                 height: 125%;
                 z-index: -1;
