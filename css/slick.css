@@ -1,5 +1,4 @@
 /* Slider */
-/* line 2, ../New Sito ReyOasi/scss/slick.scss */
 .slick-slider {
   position: relative;
   display: block;
@@ -15,7 +14,6 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 16, ../New Sito ReyOasi/scss/slick.scss */
 .slick-list {
   position: relative;
   overflow: hidden;
@@ -24,18 +22,15 @@
   padding: 0;
 }
 
-/* line 23, ../New Sito ReyOasi/scss/slick.scss */
 .slick-list:focus {
   outline: none;
 }
 
-/* line 27, ../New Sito ReyOasi/scss/slick.scss */
 .slick-list.dragging {
   cursor: pointer;
   cursor: hand;
 }
 
-/* line 32, ../New Sito ReyOasi/scss/slick.scss */
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
@@ -45,7 +40,6 @@
   transform: translate3d(0, 0, 0);
 }
 
-/* line 41, ../New Sito ReyOasi/scss/slick.scss */
 .slick-track {
   position: relative;
   left: 0;
@@ -55,23 +49,19 @@
   margin-right: auto;
 }
 
-/* line 49, ../New Sito ReyOasi/scss/slick.scss */
 .slick-track:before, .slick-track:after {
   content: "";
   display: table;
 }
 
-/* line 55, ../New Sito ReyOasi/scss/slick.scss */
 .slick-track:after {
   clear: both;
 }
 
-/* line 59, ../New Sito ReyOasi/scss/slick.scss */
 .slick-loading .slick-track {
   visibility: hidden;
 }
 
-/* line 63, ../New Sito ReyOasi/scss/slick.scss */
 .slick-slide {
   float: left;
   height: 100%;
@@ -79,46 +69,36 @@
   display: none;
 }
 
-/* line 67, ../New Sito ReyOasi/scss/slick.scss */
 [dir="rtl"] .slick-slide {
   float: right;
 }
 
-/* line 70, ../New Sito ReyOasi/scss/slick.scss */
 .slick-slide img {
   display: block;
 }
 
-/* line 73, ../New Sito ReyOasi/scss/slick.scss */
 .slick-slide.slick-loading img {
   display: none;
 }
 
-/* line 79, ../New Sito ReyOasi/scss/slick.scss */
 .slick-slide.dragging img {
   pointer-events: none;
 }
 
-/* line 83, ../New Sito ReyOasi/scss/slick.scss */
 .slick-initialized .slick-slide {
   display: block;
 }
 
-/* line 87, ../New Sito ReyOasi/scss/slick.scss */
 .slick-loading .slick-slide {
   visibility: hidden;
 }
 
-/* line 91, ../New Sito ReyOasi/scss/slick.scss */
 .slick-vertical .slick-slide {
   display: block;
   height: auto;
   border: 1px solid transparent;
 }
 
-/* line 97, ../New Sito ReyOasi/scss/slick.scss */
 .slick-arrow.slick-hidden {
   display: none;
 }
-
-/*# sourceMappingURL=slick.css.map */

@@ -96,6 +96,9 @@
   outline: none;
   cursor: pointer;
 
+  // background: rgba(173, 173, 170, 0.6);
+  // border-radius: 15px; vedere pochino
+
   @include sp-layout {
     top: 3vmax;
     right: 4vmax;
