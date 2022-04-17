@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Mukta:700");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+/* line 36, ../New Sito ReyOasi/scss/button-hover.scss */
 .learn-more {
   font-family: 'Lora', serif;
   position: relative;
@@ -16,11 +17,13 @@
 }
 
 @media screen and (max-width: 800px) {
+  /* line 36, ../New Sito ReyOasi/scss/button-hover.scss */
   .learn-more {
     width: 9rem;
   }
 }
 
+/* line 57, ../New Sito ReyOasi/scss/button-hover.scss */
 .learn-more .circle {
   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   -moz-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -38,12 +41,14 @@
 }
 
 @media screen and (max-width: 800px) {
+  /* line 57, ../New Sito ReyOasi/scss/button-hover.scss */
   .learn-more .circle {
     width: 2.6rem;
     height: 2.6rem;
   }
 }
 
+/* line 73, ../New Sito ReyOasi/scss/button-hover.scss */
 .learn-more .circle .icon {
   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   -moz-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -56,6 +61,7 @@
   background: #fff;
 }
 
+/* line 81, ../New Sito ReyOasi/scss/button-hover.scss */
 .learn-more .circle .icon.arrow {
   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   -moz-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -68,11 +74,13 @@
 }
 
 @media screen and (max-width: 800px) {
+  /* line 81, ../New Sito ReyOasi/scss/button-hover.scss */
   .learn-more .circle .icon.arrow {
     left: 0.45rem;
   }
 }
 
+/* line 93, ../New Sito ReyOasi/scss/button-hover.scss */
 .learn-more .circle .icon.arrow::before {
   position: absolute;
   content: "";
@@ -85,6 +93,7 @@
   transform: rotate(45deg);
 }
 
+/* line 108, ../New Sito ReyOasi/scss/button-hover.scss */
 .learn-more .button-text {
   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   -moz-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -105,21 +114,27 @@
 }
 
 @media screen and (max-width: 800px) {
+  /* line 108, ../New Sito ReyOasi/scss/button-hover.scss */
   .learn-more .button-text {
     font-size: 110%;
   }
 }
 
+/* line 130, ../New Sito ReyOasi/scss/button-hover.scss */
 .learn-more:hover .circle {
   width: 100%;
 }
 
+/* line 134, ../New Sito ReyOasi/scss/button-hover.scss */
 .learn-more:hover .circle .icon.arrow {
   left: 0.2rem;
   background: #fff;
   transform: translate(1rem, 0);
 }
 
+/* line 142, ../New Sito ReyOasi/scss/button-hover.scss */
 .learn-more:hover .button-text {
   color: #fff;
 }
+
+/*# sourceMappingURL=button-hover.css.map */

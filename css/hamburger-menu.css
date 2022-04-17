@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+/* line 22, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 #burger-toggle {
   position: absolute;
   appearance: none;
@@ -6,11 +7,13 @@
   z-index: 101;
 }
 
+/* line 29, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 #burger-toggle:checked ~ .menu {
   opacity: 1;
   visibility: visible;
 }
 
+/* line 33, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 #burger-toggle:checked ~ .menu .menu-nav-link span div,
 #burger-toggle:checked ~ .menu img,
 #burger-toggle:checked ~ .menu .title p,
@@ -25,6 +28,7 @@
   -webkit-transition: 1.2s 0.1s cubic-bezier(0.35, 0, 0.07, 1);
 }
 
+/* line 49, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 #burger-toggle:checked ~ .menu .image-link:nth-child(1) img {
   transition-delay: 0.18s;
   -o-transition-delay: 0.18s;
@@ -32,6 +36,7 @@
   -webkit-transition-delay: 0.18s;
 }
 
+/* line 49, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 #burger-toggle:checked ~ .menu .image-link:nth-child(2) img {
   transition-delay: 0.26s;
   -o-transition-delay: 0.26s;
@@ -39,6 +44,7 @@
   -webkit-transition-delay: 0.26s;
 }
 
+/* line 49, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 #burger-toggle:checked ~ .menu .image-link:nth-child(3) img {
   transition-delay: 0.34s;
   -o-transition-delay: 0.34s;
@@ -46,6 +52,7 @@
   -webkit-transition-delay: 0.34s;
 }
 
+/* line 49, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 #burger-toggle:checked ~ .menu .image-link:nth-child(4) img {
   transition-delay: 0.42s;
   -o-transition-delay: 0.42s;
@@ -53,6 +60,7 @@
   -webkit-transition-delay: 0.42s;
 }
 
+/* line 61, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 #burger-toggle:checked ~ .burger-menu .line::after {
   transform: translateX(0);
   -o-transform: translateX(0);
@@ -60,6 +68,7 @@
   -webkit-transform: translateX(0);
 }
 
+/* line 68, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 #burger-toggle:checked ~ .burger-menu .line:nth-child(1) {
   transform: translateY(calc(var(--burger-menu-radius) / 5)) rotate(45deg);
   -o-transform: translateY(calc(var(--burger-menu-radius) / 5)) rotate(45deg);
@@ -67,6 +76,7 @@
   -webkit-transform: translateY(calc(var(--burger-menu-radius) / 5)) rotate(45deg);
 }
 
+/* line 75, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 #burger-toggle:checked ~ .burger-menu .line:nth-child(2) {
   transform: scaleX(0);
   -o-transform: scaleX(0);
@@ -74,6 +84,7 @@
   -webkit-transform: scaleX(0);
 }
 
+/* line 82, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 #burger-toggle:checked ~ .burger-menu .line:nth-child(3) {
   transform: translateY(calc(var(--burger-menu-radius) / -5)) rotate(-45deg);
   -o-transform: translateY(calc(var(--burger-menu-radius) / -5)) rotate(-45deg);
@@ -81,6 +92,7 @@
   -webkit-transform: translateY(calc(var(--burger-menu-radius) / -5)) rotate(-45deg);
 }
 
+/* line 93, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .burger-menu {
   --burger-menu-radius: 4em;
   position: fixed;
@@ -94,6 +106,7 @@
   cursor: pointer;
 }
 
+/* line 106, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .burger-menu #brushstroke-menu {
   position: absolute;
   top: 0px;
@@ -109,12 +122,14 @@
 }
 
 @media screen and (max-width: 850px) {
+  /* line 93, ../New Sito ReyOasi/scss/hamburger-menu.scss */
   .burger-menu {
     top: 3vmax;
     right: 4vmax;
   }
 }
 
+/* line 122, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .burger-menu .line {
   position: absolute;
   left: 25%;
@@ -129,18 +144,22 @@
   -webkit-transition: 0.5s;
 }
 
+/* line 135, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .burger-menu .line:nth-child(1) {
   top: 30%;
 }
 
+/* line 139, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .burger-menu .line:nth-child(2) {
   top: 50%;
 }
 
+/* line 143, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .burger-menu .line:nth-child(3) {
   top: 70%;
 }
 
+/* line 147, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .burger-menu .line:nth-child(1), .burger-menu .line:nth-child(2), .burger-menu .line:nth-child(3) {
   transition: 0.8s;
   -o-transition: 0.8s;
@@ -148,6 +167,7 @@
   -webkit-transition: 0.8s;
 }
 
+/* line 154, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .burger-menu .line::after {
   position: absolute;
   content: "";
@@ -165,6 +185,7 @@
   -webkit-transition: 0.5s;
 }
 
+/* line 172, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .burger-menu .line:nth-child(2)::after {
   transition-delay: 0s;
   -o-transition-delay: 0s;
@@ -172,6 +193,7 @@
   -webkit-transition-delay: 0s;
 }
 
+/* line 172, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .burger-menu .line:nth-child(3)::after {
   transition-delay: 0s;
   -o-transition-delay: 0s;
@@ -179,6 +201,7 @@
   -webkit-transition-delay: 0s;
 }
 
+/* line 182, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .burger-menu:hover .line::after {
   background: rgba(255, 255, 255, 0.8);
   transform: translateX(0);
@@ -187,6 +210,7 @@
   -webkit-transform: translateX(0);
 }
 
+/* line 192, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu {
   position: absolute;
   top: 0;
@@ -209,11 +233,13 @@
 }
 
 @media screen and (max-width: 850px) {
+  /* line 192, ../New Sito ReyOasi/scss/hamburger-menu.scss */
   .menu {
     display: block;
   }
 }
 
+/* line 216, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu-nav {
   display: flex;
   flex-wrap: wrap;
@@ -224,16 +250,19 @@
 }
 
 @media screen and (max-width: 850px) {
+  /* line 216, ../New Sito ReyOasi/scss/hamburger-menu.scss */
   .menu-nav {
     flex-direction: column;
     margin-top: 100px;
   }
 }
 
+/* line 229, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu-nav-item {
   flex: 1;
 }
 
+/* line 233, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu-nav-link {
   position: relative;
   display: inline-flex;
@@ -242,10 +271,12 @@
   text-decoration: none;
 }
 
+/* line 240, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu-nav-link span {
   overflow: hidden;
 }
 
+/* line 243, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu-nav-link span div {
   transform: translateY(102%);
   -o-transform: translateY(102%);
@@ -253,6 +284,7 @@
   -webkit-transform: translateY(102%);
 }
 
+/* line 251, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu-nav-link::after {
   position: absolute;
   content: "";
@@ -275,6 +307,7 @@
   -webkit-transition: transform 0.5s;
 }
 
+/* line 274, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu-nav-link:hover::after {
   transform: scaleX(1);
   -o-transform: scaleX(1);
@@ -286,17 +319,20 @@
   -webkit-transform-origin: left;
 }
 
+/* line 287, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .gallery {
   margin-top: 60px;
   text-align: center;
 }
 
+/* line 292, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .title {
   font-size: 24px;
   color: white;
   overflow: hidden;
 }
 
+/* line 297, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .title p {
   font-size: 23px;
   letter-spacing: 2px;
@@ -307,6 +343,7 @@
   font-family: 'Dancing Script', cursive;
 }
 
+/* line 309, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .images {
   margin-top: 36px;
   display: flex;
@@ -314,11 +351,13 @@
 }
 
 @media screen and (max-width: 850px) {
+  /* line 309, ../New Sito ReyOasi/scss/hamburger-menu.scss */
   .menu .images {
     justify-content: center;
   }
 }
 
+/* line 318, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .images .image-link {
   width: 15vw;
   margin: 0 12px;
@@ -326,12 +365,14 @@
 }
 
 @media screen and (max-width: 850px) {
+  /* line 318, ../New Sito ReyOasi/scss/hamburger-menu.scss */
   .menu .images .image-link {
     width: 40%;
     margin: 0 12px 12px 12px;
   }
 }
 
+/* line 328, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .images .image-link .image {
   position: relative;
   transition: 0.6s;
@@ -342,6 +383,7 @@
   justify-content: center;
 }
 
+/* line 337, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .images .image-link .image::before {
   position: absolute;
   content: attr(data-label);
@@ -362,6 +404,7 @@
   -webkit-transition: 0.4s;
 }
 
+/* line 358, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .images .image-link:hover .image {
   transform: scale(1.15);
   -o-transform: scale(1.15);
@@ -369,10 +412,12 @@
   -webkit-transform: scale(1.15);
 }
 
+/* line 364, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .images .image-link:hover .image::before {
   opacity: 1;
 }
 
+/* line 370, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .images img {
   height: 250px;
   transform: translateY(102%);
@@ -381,16 +426,19 @@
   -webkit-transform: translateY(102%);
 }
 
+/* line 379, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .lenguage-social {
   position: relative;
   display: flex;
   flex-wrap: wrap;
 }
 
+/* line 384, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .lenguage-social ul {
   overflow-x: hidden;
 }
 
+/* line 387, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .menu .lenguage-social ul li {
   transform: translateY(102%);
   -o-transform: translateY(102%);
@@ -398,6 +446,7 @@
   -webkit-transform: translateY(102%);
 }
 
+/* line 397, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .lenguage {
   cursor: pointer;
   position: absolute;
@@ -405,24 +454,28 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* line 403, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .lenguage ul {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
 }
 
+/* line 408, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .lenguage ul li {
   color: #adadad;
   margin-right: 15px;
   font-size: 13px;
 }
 
+/* line 413, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .lenguage ul li:hover {
   color: #ffffff;
   text-decoration-line: underline;
   text-underline-offset: 2px;
 }
 
+/* line 422, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .social {
   cursor: pointer;
   position: absolute;
@@ -430,29 +483,37 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* line 428, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .social ul {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
 }
 
+/* line 433, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .social ul li {
   margin-left: 15px;
 }
 
+/* line 436, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .social ul li .fa {
   color: #adadad;
   font-size: 18px;
 }
 
+/* line 440, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .social ul li .fa-instagram:hover {
   color: #ff95fa;
 }
 
+/* line 444, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .social ul li .fa-facebook:hover {
   color: #3a5ba3;
 }
 
+/* line 448, ../New Sito ReyOasi/scss/hamburger-menu.scss */
 .social ul li .fa-tripadvisor:hover {
   color: #47b62b;
 }
+
+/*# sourceMappingURL=hamburger-menu.css.map */
