@@ -16,15 +16,15 @@ function checked_menu (idhome, idsection, idfisso, idnav, idlogo, idbrushstroke_
         fisso.style.webkitFilter = "blur(2px) brightness(60%)";
 
         //Scompare il documento all'apertura del menu 
-        //(vecchio background navbar responsive che si alza)
-        // if (mobile_screen.matches || vertical_screen.matches){
-        //     nav.style.transform = "translateY(-100%)";
-        //     nav.style.opacity = "0";  
-        // }
-        // else{
-        //     logo.style.opacity = "0";
-        //     brushstroke_menu.style.opacity = "0";
-        // }
+            //(vecchio background navbar responsive che si alza)
+            // if (mobile_screen.matches || vertical_screen.matches){
+            //     nav.style.transform = "translateY(-100%)";
+            //     nav.style.opacity = "0";  
+            // }
+            // else{
+            //     logo.style.opacity = "0";
+            //     brushstroke_menu.style.opacity = "0";
+            // }
 
         //(nuovo)
         logo.style.opacity = "0";
@@ -48,14 +48,14 @@ function checked_menu (idhome, idsection, idfisso, idnav, idlogo, idbrushstroke_
             section.style.display = "block";
 
             //(vecchio background navbar responsive che si alza)
-            // if (mobile_screen.matches || vertical_screen.matches){
-            //     nav.style.transform = "translateY(0%)";
-            //     nav.style.opacity = "1";  
-            // }
-            // else{
-            //     logo.style.opacity = "1";
-            //     brushstroke_menu.style.opacity = "0.8";
-            // }
+                // if (mobile_screen.matches || vertical_screen.matches){
+                //     nav.style.transform = "translateY(0%)";
+                //     nav.style.opacity = "1";  
+                // }
+                // else{
+                //     logo.style.opacity = "1";
+                //     brushstroke_menu.style.opacity = "0.8";
+                // }
 
             // (nuovo)
             logo.style.opacity = "1";

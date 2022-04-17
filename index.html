@@ -181,7 +181,14 @@
     </section>
 
     <!-- Script javascript -->
-    <script>document.documentElement.style.setProperty("--sfondo", "url(../img/provvisorie/home-sfondo.jpg)");</script>
+    <script>
+      if (window.matchMedia("(max-width: 800px)").matches || window.matchMedia("(orientation: portrait)").matches){
+        document.documentElement.style.setProperty("--sfondo", "url(../img/provvisorie/sfondo1.jpg)");
+      }
+      else{
+        document.documentElement.style.setProperty("--sfondo", "url(../img/provvisorie/sfondo2.jpg)");
+      }
+    </script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="JS/slick.min.js"></script>

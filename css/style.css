@@ -547,7 +547,7 @@ body::after, html::after {
   width: 100%;
   background: #faebd7;
   color: #353535;
-  padding: 60px;
+  padding: 4%;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -556,24 +556,22 @@ body::after, html::after {
 
 #chi-siamo .Titolo-paragrafo {
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Dancing Script', cursive;
   line-height: 90%;
-  font-size: 260%;
+  font-size: 300%;
   font-weight: bold;
 }
 
 #chi-siamo .testo-paragrafo {
   text-align: justify;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   line-height: 250%;
   font-weight: bold;
   margin-top: 30px;
 }
 
 #chi-siamo #Storia {
-  background: rgba(173, 173, 170, 0.6);
+  float: left;
   align-items: center;
-  padding: 30px;
-  width: 60%;
-  border-radius: 15px;
+  width: 50%;
 }

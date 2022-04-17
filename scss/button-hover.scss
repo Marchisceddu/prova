@@ -5,9 +5,9 @@ $white: #fff;
 
 @mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65, 0, 0.076, 1)) {
     -webkit-transition: $property $duration $ease;
-    -moz-transition: $property $duration $ease;
-      -o-transition: $property $duration $ease;
-         transition: $property $duration $ease;
+       -moz-transition: $property $duration $ease;
+         -o-transition: $property $duration $ease;
+            transition: $property $duration $ease;
 } 
 
 @mixin sp-layout {
