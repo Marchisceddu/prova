@@ -477,8 +477,20 @@ body, html {
     }
 
     #Storia{
+        display: inline-block;
         float: left;
         align-items: center;
-        width: 100%;
+        width: 50%;
+    }
+
+    .l23{
+        width: 43%;
+        height: 30%;
+        float: right;
+
+        & img{
+            width: 100%;
+        }
     }
 }
+

@@ -639,8 +639,21 @@ body::after, html::after {
 
 /* line 479, ../New Sito ReyOasi/scss/style.scss */
 #chi-siamo #Storia {
+  display: inline-block;
   float: left;
   align-items: center;
+  width: 50%;
+}
+
+/* line 486, ../New Sito ReyOasi/scss/style.scss */
+#chi-siamo .l23 {
+  width: 43%;
+  height: 30%;
+  float: right;
+}
+
+/* line 491, ../New Sito ReyOasi/scss/style.scss */
+#chi-siamo .l23 img {
   width: 100%;
 }
 
