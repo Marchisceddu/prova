@@ -101,7 +101,7 @@ body::after, html::after {
   position: relative;
   margin-top: 3vmax;
   margin-left: 4vmax;
-  width: fit-content;
+  width: 147px;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
@@ -638,7 +638,7 @@ body::after, html::after {
 }
 
 /* line 480, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
-#chi-siamo .cacca {
+#chi-siamo .box-txt {
   width: 100%;
   height: auto;
   display: flex;
@@ -646,13 +646,13 @@ body::after, html::after {
 }
 
 /* line 486, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
-#chi-siamo .cacca #Storia {
+#chi-siamo .box-txt #Storia {
   display: inline-block;
   width: 55%;
 }
 
 /* line 491, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
-#chi-siamo .cacca .l23 {
+#chi-siamo .box-txt .box-img {
   display: inline;
   text-align: right;
   margin-left: 5%;
@@ -661,7 +661,7 @@ body::after, html::after {
 }
 
 /* line 498, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
-#chi-siamo .cacca .l23 img {
+#chi-siamo .box-txt .box-img img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   width: 100%;
 }

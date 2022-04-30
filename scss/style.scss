@@ -89,7 +89,7 @@ body, html {
 
     #stiky-nav{
         position: fixed;
-        z-index: 100; //impostare a 1 per arrivare il background nella navbar
+        z-index: 100; //impostare a 1 per attivare il background nella navbar
         top: 0;
         width: 100%;
         @include transition(0.5s cubic-bezier(.17,.67,.83,.70));
@@ -109,7 +109,7 @@ body, html {
             position: relative;
             margin-top: 3vmax;
             margin-left: 4vmax;
-            width: fit-content;
+            width: 147px;
             @include transition(0.5s);
             
             @include mobile-layaut{
@@ -477,7 +477,7 @@ body, html {
         margin-top: 30px;
     }
 
-    .cacca{
+    .box-txt{
         width: 100%;
         height: auto;
         display: flex;
@@ -488,7 +488,7 @@ body, html {
             width: 55%;
         }
     
-        .l23{
+        .box-img{
             display: inline;
             text-align: right;
             margin-left: 5%;
