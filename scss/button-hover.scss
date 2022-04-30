@@ -108,11 +108,12 @@ $white: #fff;
     .button-text {
         @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
         position: absolute;
-        top: 0;
+        top: 50%; //vecchio stile 0
         left: 0;
         right: 0;
         bottom: 0;
-        padding: 0.70rem 0;       
+        transform: translateY(-50%);
+        // padding: 0.70rem 0; //vecchio stile
         margin: 0 0 0 1.9rem;
         color: $white;
         font-size: 120%;
