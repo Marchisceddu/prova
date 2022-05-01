@@ -71,6 +71,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     let block = document.getElementById('fisso');
+    let info = document.getElementById('chi-siamo');
 
     if (document.documentElement.scrollTop < 250) {
         block.style.filter = "blur(0px) brightness(100%)";
@@ -79,6 +80,13 @@ function scrollFunction() {
     else{
         block.style.filter = "blur(1px) brightness(80%)";
         block.style.webkitFilter = "blur(1px) brightness(80%)";
+    }
+
+    if (document.documentElement.scrollTop == 0) {
+      info.style.boxShadow = "rgba(0,0,0,0)"
+    }
+    else{
+      info.style.boxShadow = "rgba(0,0,0,0.4)"
     }
 }
 

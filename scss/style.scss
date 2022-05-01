@@ -165,7 +165,7 @@ body, html {
         position: fixed;
         z-index: 1;
         width: 100%;
-        height: 100vmin;
+        height: 99vmin;
         @include transition(0.5s);
         @include filter(blur(0px) brightness(100%));
 
@@ -345,7 +345,6 @@ body, html {
 
         .home-lenguage{
             cursor: pointer;
-            display: block;
             position: absolute;
             bottom: 15px;
             left: 0;
@@ -377,7 +376,6 @@ body, html {
 
         .home-social{
             cursor: pointer;
-            display: block;
             position: absolute;
             bottom: 15px;
             right: 37px;
