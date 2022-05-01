@@ -110,4 +110,30 @@ $(document).ready(function(){
         // instead of a settings object
       ]
     });
+
+    //Funzione per lo scorrere delle foto in home
+    $('.box-img').slick({
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 8000,
+        speed: 800,
+        edgeFriction: 0,
+        touchThreshold: 8,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });
+
+    //Funzione per lo scorrere dell testo in home
+    $('.testo-paragrafo').slick({
+        dots: true,
+        infinite: false,
+        autoplay: false,
+        autoplaySpeed: 0,
+        speed: 800,
+        edgeFriction: 0,
+        touchThreshold: 8,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });
   });

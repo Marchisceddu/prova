@@ -466,6 +466,7 @@ body::after, html::after {
 /* line 346, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
 #home #fisso .home-lenguage {
   cursor: pointer;
+  display: block;
   position: absolute;
   bottom: 15px;
   left: 0;
@@ -479,14 +480,14 @@ body::after, html::after {
   }
 }
 
-/* line 357, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+/* line 358, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
 #home #fisso .home-lenguage ul {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
 }
 
-/* line 362, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+/* line 363, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
 #home #fisso .home-lenguage ul li {
   color: #adadad;
   margin-right: 15px;
@@ -497,16 +498,17 @@ body::after, html::after {
   transition: 0.5s;
 }
 
-/* line 368, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+/* line 369, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
 #home #fisso .home-lenguage ul li:hover {
   color: #ffffff;
   text-decoration-line: underline;
   text-underline-offset: 2px;
 }
 
-/* line 377, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+/* line 378, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
 #home #fisso .home-social {
   cursor: pointer;
+  display: block;
   position: absolute;
   bottom: 15px;
   right: 37px;
@@ -514,25 +516,25 @@ body::after, html::after {
 }
 
 @media screen and (max-width: 800px), screen and (orientation: portrait) {
-  /* line 377, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+  /* line 378, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
   #home #fisso .home-social {
     display: none;
   }
 }
 
-/* line 388, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+/* line 390, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
 #home #fisso .home-social ul {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
 }
 
-/* line 393, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+/* line 395, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
 #home #fisso .home-social ul li {
   margin-left: 15px;
 }
 
-/* line 396, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+/* line 398, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
 #home #fisso .home-social ul li .fa {
   color: #adadad;
   font-size: 18px;
@@ -542,22 +544,22 @@ body::after, html::after {
   transition: 0.3s;
 }
 
-/* line 401, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+/* line 403, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
 #home #fisso .home-social ul li .fa-instagram:hover {
   color: #ff95fa;
 }
 
-/* line 405, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+/* line 407, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
 #home #fisso .home-social ul li .fa-facebook:hover {
   color: #3a5ba3;
 }
 
-/* line 409, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+/* line 411, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
 #home #fisso .home-social ul li .fa-tripadvisor:hover {
   color: #47b62b;
 }
 
-/* line 418, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+/* line 420, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
 #home #info {
   cursor: pointer;
   position: absolute;
@@ -580,13 +582,13 @@ body::after, html::after {
   transition: 1s;
 }
 
-/* line 433, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+/* line 435, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
 #home #info p {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
-/* line 438, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+/* line 440, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
 #home #info .arrow-down {
   margin-top: 30%;
   width: 10px;
@@ -594,18 +596,18 @@ body::after, html::after {
   filter: invert(97%) sepia(0%) saturate(6321%) hue-rotate(193deg) brightness(122%) contrast(84%);
 }
 
-/* line 444, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+/* line 446, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
 #home #info:hover {
   color: white;
 }
 
-/* line 447, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+/* line 449, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
 #home #info:hover .arrow-down {
   -webkit-filter: invert(99%) sepia(3%) saturate(104%) hue-rotate(18deg) brightness(116%) contrast(100%);
   filter: invert(99%) sepia(3%) saturate(104%) hue-rotate(18deg) brightness(116%) contrast(100%);
 }
 
-/* line 454, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+/* line 456, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
 #chi-siamo {
   position: relative;
   z-index: 3;
@@ -620,7 +622,7 @@ body::after, html::after {
   transition: 0.3s;
 }
 
-/* line 464, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+/* line 466, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
 #chi-siamo .Titolo-paragrafo {
   text-align: center;
   font-family: 'Dancing Script', cursive;
@@ -629,39 +631,48 @@ body::after, html::after {
   font-weight: bold;
 }
 
-/* line 472, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+/* line 474, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
 #chi-siamo .testo-paragrafo {
+  text-align: justify;
   font-family: 'Times New Roman', Times, serif;
   line-height: 250%;
   font-weight: bold;
   margin-top: 30px;
 }
 
-/* line 480, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
-#chi-siamo .box-txt {
+/* line 482, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+#chi-siamo .box-info {
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
+  margin-bottom: 50px;
 }
 
-/* line 486, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
-#chi-siamo .box-txt #Storia {
+/* line 489, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+#chi-siamo .box-info #box-txt {
   display: inline-block;
   width: 55%;
 }
 
-/* line 491, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
-#chi-siamo .box-txt .box-img {
-  display: inline;
+/* line 494, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+#chi-siamo .box-info .box-img {
+  display: flex;
+  flex-wrap: wrap;
   text-align: right;
-  margin-left: 5%;
   width: 40%;
   height: 30%;
 }
 
-/* line 498, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
-#chi-siamo .box-txt .box-img img {
+/* line 501, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+#chi-siamo .box-info .box-img div {
+  margin: 0 12px;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 507, ../../../../../Users/marcopilia/Desktop/NewSite ReyOasi/scss/style.scss */
+#chi-siamo .box-info .box-img img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   width: 100%;
 }

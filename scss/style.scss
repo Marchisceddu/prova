@@ -345,6 +345,7 @@ body, html {
 
         .home-lenguage{
             cursor: pointer;
+            display: block;
             position: absolute;
             bottom: 15px;
             left: 0;
@@ -376,6 +377,7 @@ body, html {
 
         .home-social{
             cursor: pointer;
+            display: block;
             position: absolute;
             bottom: 15px;
             right: 37px;
@@ -470,30 +472,37 @@ body, html {
     }
 
     .testo-paragrafo{
-        // text-align: justify;
+        text-align: justify;
         font-family: 'Times New Roman', Times, serif;
         line-height: 250%;
         font-weight: bold;
         margin-top: 30px;
     }
 
-    .box-txt{
+    .box-info{
         width: 100%;
         height: auto;
         display: flex;
         align-items: center;
+        margin-bottom: 50px;
 
-        #Storia{
+        #box-txt{
             display: inline-block;
             width: 55%;
         }
     
         .box-img{
-            display: inline;
+            display: flex;
+            flex-wrap: wrap;
             text-align: right;
-            margin-left: 5%;
             width: 40%;
             height: 30%;
+
+            & div{
+                margin: 0 12px;
+                display: flex;
+                justify-content: center;        
+            }
     
             & img{
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
