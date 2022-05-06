@@ -71,22 +71,36 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     let block = document.getElementById('fisso');
-    let info = document.getElementById('chi-siamo');
 
     if (document.documentElement.scrollTop < 250) {
         block.style.filter = "blur(0px) brightness(100%)";
         block.style.webkitFilter = "blur(0px) brightness(100%)";
     }
-    else{
+    else {
         block.style.filter = "blur(1px) brightness(80%)";
         block.style.webkitFilter = "blur(1px) brightness(80%)";
     }
 
-    if (document.documentElement.scrollTop == 0) {
-      info.style.boxShadow = "rgba(0,0,0,0)"
+    //TXT1, IMG1 SINISTRA
+    let txt1 = document.getElementById('box-txt1');
+    let img1 = document.getElementById('box-img1');
+
+    // document.getElementById('sborr').innerHTML = document.documentElement.scrollTop;
+    // document.getElementById('sborr2').innerHTML = getComputedStyle(img1).getPropertyValue('--translatex');
+    
+    if (document.documentElement.scrollTop <= 200) {
+      txt1.style.setProperty("--translatex", -110 +"%");
+      img1.style.setProperty("--translatex", 110 +"%");
     }
-    else{
-      info.style.boxShadow = "rgba(0,0,0,0.4)"
+    else if (document.documentElement.scrollTop <= 400) {
+      txt1.style.setProperty("--translatex", ((window.scrollY - 200) / 1.80) - 110 + "%");
+      img1.style.setProperty("--translatex", (110 - (window.scrollY - 200) / 1.80) + "%");
+    }
+
+    if (getComputedStyle(document.getElementById('box-txt1')).getPropertyValue('--translatex') > "0.5555555555555571%" || 
+       (getComputedStyle(document.getElementById('box-txt1')).getPropertyValue('--translatex') < "0.5555555555555571%" && document.documentElement.scrollTop > 400)) {
+      txt1.style.setProperty("--translatex", 0.5555555555555571 +"%");
+      img1.style.setProperty("--translatex", 0 +"%");
     }
 }
 
@@ -117,7 +131,7 @@ $(document).ready(function(){
         // settings: "unslick"
         // instead of a settings object
       ]
-    });
+  });
 
     //Funzione per lo scorrere delle foto in home
     $('.box-img').slick({
@@ -130,11 +144,12 @@ $(document).ready(function(){
         touchThreshold: 8,
         slidesToShow: 1,
         slidesToScroll: 1,
-      });
+    });
 
     //Funzione per lo scorrere dell testo in home
     $('.testo-paragrafo').slick({
-        dots: true,
+        dots: false,
+        arrows: false,
         infinite: false,
         autoplay: false,
         autoplaySpeed: 0,
@@ -143,5 +158,6 @@ $(document).ready(function(){
         touchThreshold: 8,
         slidesToShow: 1,
         slidesToScroll: 1,
-      });
+    });
+
   });

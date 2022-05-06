@@ -22,6 +22,8 @@
     <link href="css/slick.css" rel="stylesheet" type="text/css">
     <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="font-awesome-4.7/css/font-awesome.min.css"> <!-- icone -->
+
+    <link href="css/scroll-animation.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header id="sfondo"></header>
@@ -170,8 +172,13 @@
 
     <section id="chi-siamo">
 
+      <div id="sborr" style="position: absolute; top: 0;">
+      </div>
+      <div id="sborr2" style="position: absolute; top: 20px;">
+      </div>
+
       <div class="box-info">
-        <div id="box-txt">
+        <div id="box-txt1"> 
           <div class="Titolo-paragrafo">
             Storia
           </div>
@@ -179,7 +186,7 @@
             Nel 1988 nasce a Costa Rey, nella splendida località turistica della costa sud-orientale della Sardegna, il locale Rey Oasi, a conduzione familiare, inizialmente con l'attività del bar e gelateria artigianale, implementata dal 1990 con la pizzeria e dal 1996 anche con l'attività di ristorazione, trasformando un sogno in realtà.
           </div>
         </div>
-        <div class="box-img" style="margin-left: 5%;">
+        <div class="box-img" style="margin-left: 5%;" id="box-img1">
           <div><img src="img/provvisorie/casereccie.JPG" alt=""></div>
           <div><img src="img/provvisorie/casereccie.JPG" alt=""></div>
           <div><img src="img/provvisorie/casereccie.JPG" alt=""></div>
@@ -194,7 +201,7 @@
           <div><img src="img/provvisorie/casereccie.JPG" alt=""></div>
           <div><img src="img/provvisorie/casereccie.JPG" alt=""></div>
         </div>
-        <div id="box-txt">
+        <div id="box-txt2">
           <div class="Titolo-paragrafo">
             Attività
           </div>
@@ -210,11 +217,15 @@
               La gelateria artigianale, include invece una vasta gamma di gusti gelato, lavorati in modo sapiente, secondo la consolidata tradizione decennale del locale.  
             </div>
           </div>
+
+          <button class="caca" onclick="$('.testo-paragrafo').slick('slickNext')">
+            ciao
+          </button>
         </div>
       </div>
 
       <div class="box-info" style="margin-bottom: 0px;">
-        <div id="box-txt">
+        <div id="box-txt3">
           <div class="Titolo-paragrafo">
             Struttura
           </div>
@@ -229,21 +240,22 @@
           <div><img src="img/provvisorie/casereccie.JPG" alt=""></div>
         </div>
       </div>
-      
     </section>
 
     <!-- Script javascript -->
     <script>
-      if (window.matchMedia("(max-width: 800px)").matches || window.matchMedia("(orientation: portrait)").matches){
-        document.documentElement.style.setProperty("--sfondo", "url(../img/provvisorie/sfondo1.jpg)");
-      }
-      else{
-        document.documentElement.style.setProperty("--sfondo", "url(../img/provvisorie/sfondo2.jpg)");
-      }
+      // if (window.matchMedia("(max-width: 800px)").matches || window.matchMedia("(orientation: portrait)").matches){
+      //   document.documentElement.style.setProperty("--sfondo", "url(../img/provvisorie/sfondo1.jpg)");
+      // }
+      // else{
+      //   document.documentElement.style.setProperty("--sfondo", "url(../img/provvisorie/sfondo2.JPG)");
+      // }
     </script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="JS/slick.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
+
+    <script src="js/scroll-animation.js" type="text/javascript"></script>
 </body>
 </html>

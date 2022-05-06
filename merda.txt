@@ -1,0 +1,28 @@
+    let caca = 10
+
+    const el = document.querySelector('#box-txt1')
+    const observer = new window.IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) {
+        console.log('ENTER')
+        // if (caca == 0){
+        //   caca = window.scrollY
+        // }
+        document.getElementById('sborr').innerHTML = document.documentElement.scrollTop;
+        // if (getComputedStyle(document.getElementById('box-txt1')).getPropertyValue('--translatex') < "0.5555555555555571%"){
+        //   txt1.style.setProperty("--translatex", ((window.scrollY-200) / 1.80) - 110 + "%");
+        // }
+    
+        // if (getComputedStyle(document.getElementById('box-txt1')).getPropertyValue('--translatex') > "0.5555555555555571%"){
+        //   txt1.style.setProperty("--translatex", 0.5555555555555571 +"%");
+        // }
+        return
+      }
+      console.log('LEAVE')
+      txt1.style.setProperty("--translatex", -110 +"%");
+    }, {
+      root: null,
+      rootMargin: '0% 0% 0% 110%',
+      threshold: 0.1, // set offset 0.1 means trigger if atleast 10% of element in viewport
+    })
+
+    observer.observe(el);
